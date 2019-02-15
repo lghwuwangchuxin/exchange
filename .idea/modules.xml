@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exchange.iml" filepath="$PROJECT_DIR$/exchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-check/exchange-check.iml" filepath="$PROJECT_DIR$/exchange-check/exchange-check.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-common/exchange-common.iml" filepath="$PROJECT_DIR$/exchange-common/exchange-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-load/exchange-load.iml" filepath="$PROJECT_DIR$/exchange-load/exchange-load.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-marker/exchange-marker.iml" filepath="$PROJECT_DIR$/exchange-marker/exchange-marker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-model/exchange-model.iml" filepath="$PROJECT_DIR$/exchange-model/exchange-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-task/exchange-task.iml" filepath="$PROJECT_DIR$/exchange-task/exchange-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-topo/exchange-topo.iml" filepath="$PROJECT_DIR$/exchange-topo/exchange-topo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-web/exchange-web.iml" filepath="$PROJECT_DIR$/exchange-web/exchange-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchange-writer/exchange-writer.iml" filepath="$PROJECT_DIR$/exchange-writer/exchange-writer.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+			
+	<!-- 文档类型映射 -->
+	<bean id="docTypeMapper" 
+			class="com.jsdz.digitalevidence.document.model.ContentTypeDocClassMapper">  
+		<!-- 映射别名配置 -->
+		<property name="mapper">
+        	<map>  
+            	<entry key ="flv">
+                	<value>com.jsdz.digitalevidence.document.model.FLV</value>
+                </entry>     
+                <entry key ="mp4">
+                	<value>com.jsdz.digitalevidence.document.model.MP4</value>
+                </entry>    
+                <entry key ="wav">
+                	<value>com.jsdz.digitalevidence.document.model.Audio</value>
+                </entry>   
+                <entry key ="acc">
+                	<value>com.jsdz.digitalevidence.document.model.Audio</value>
+                </entry>  
+                <entry key ="jpeg">
+                	<value>com.jsdz.digitalevidence.document.model.Picture</value>
+                </entry>
+                <entry key ="jpg">
+                	<value>com.jsdz.digitalevidence.document.model.Picture</value>
+                </entry>
+                <entry key ="txt">
+                	<value>com.jsdz.digitalevidence.document.model.RecorderLog</value>
+                </entry> 
+                <entry key ="log">
+                	<value>com.jsdz.digitalevidence.document.model.RecorderLog</value>
+                </entry>  
+                <entry key ="avi">
+                	<value>com.jsdz.digitalevidence.document.model.AVI</value>
+                </entry>                            
+            </map>            
+   		</property>
+   		
+	</bean>	
+		
+</beans>

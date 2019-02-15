@@ -1,0 +1,46 @@
+[ERROR] 2017-09-20 15:08:47,334 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:08:47,337 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:09:53,924 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:90)
+不认识类型
+[ERROR] 2017-09-20 15:10:40,375 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:10:40,376 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:11:16,331 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:11:16,332 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:12:17,178 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:12:17,178 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:22:29,784 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:22:29,785 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:23:09,632 method:com.jsdz.digitalevidence.document.service.DocumentServiceImpl.uploadDocument(DocumentServiceImpl.java:142)
+获取文档属性异常：null
+[ERROR] 2017-09-20 15:23:09,638 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:98)
+java.lang.NullPointerException
+[ERROR] 2017-09-20 15:23:46,076 method:com.jsdz.digitalevidence.document.service.DocumentServiceImpl.uploadDocument(DocumentServiceImpl.java:142)
+获取文档属性异常：null
+[ERROR] 2017-09-20 15:23:46,078 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:98)
+java.lang.NullPointerException
+[ERROR] 2017-09-20 15:25:44,664 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:25:44,664 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:27:09,826 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:98)
+Index: 0, Size: 0
+[ERROR] 2017-09-20 15:28:11,455 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 15:28:11,456 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-20 15:30:01,949 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:98)
+Index: 0, Size: 0
+[ERROR] 2017-09-20 16:05:37,362 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-20 16:05:37,364 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 布尔断言测试 -->
+<sqlTemplates>
+  <entry>
+  	<!-- 拍摄考核概况 -->
+    <string>boolTest</string>
+    <sqlTemplate>
+      <!-- sql模式 -->
+      <sqlPattern>
+		 select 
+		   *
+		 FROM t_doc d 
+		    {0} {1} 
+      </sqlPattern>
+      <!-- 返回Bean -->
+      <itemClass>com.jsdz.test.reportquery.TestBean</itemClass>
+      <!-- sql可变块 -->
+      <pieces>
+        <!-- 警员姓名 -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>boolParam</paramName>
+                <t>and I'm True</t>
+                <a class="IsTrue"/>
+              </path>
+              <path>
+                <paramName>boolParam</paramName>
+                <t>and I'm False</t>
+                <a class="IsFalse"/>             
+              </path>
+              <path>
+                <paramName>boolParam</paramName>
+                <t>and :boolParam is null</t>
+                <a class="IsNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      </pieces>
+    </sqlTemplate>
+  </entry>
+</sqlTemplates>

@@ -1,0 +1,2 @@
+[ERROR] 2017-12-25 10:41:12,799 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:114)
+实体找不到必需的关联：com.jsdz.exchange.entity.OrganizationX@6cf31447

@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping schema="ysj_yh0102">
+
+	<!--组织机构 -->
+	<class name="com.jsdz.exchange.entity.OrganizationX" table="T_ORGANIZATION">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="orgCode" column="ORG_CODE"></property>
+		<property name="orgName" column="ORG_NAME"></property>
+		<property name="pOrgCode" column="P_ORG_CODE"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 采集站 -->
+	<class name="com.jsdz.exchange.entity.SiteX" table="T_WORKSTATION">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="siteCode" column="STATION_CODE"></property>
+		<!-- <property name="siteName" column="STATION_NAME"></property> -->
+		<property name="siteIP" column="IP"></property>
+		<property name="addr" column="ADDR"></property>
+		<property name="verdor" column="VENDOR"></property>
+		<property name="orgCode" column="ORG_CODE"></property>
+		<!-- 状态 -->
+		<property name="state" column="STATE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.exchange.entity.EquipmentState
+				</param>
+			</type>
+		</property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 警员 -->
+	<class name="com.jsdz.exchange.entity.PoliceX" table="T_POLICE">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="policeCode" column="POLICE_CODE"></property>
+		<property name="policeName" column="POLICE_NAME"></property>
+		<property name="orgCode" column="ORG_CODE"></property>
+		<!-- 状态 -->
+		<property name="sex" column="SEX">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.exchange.entity.Sex
+				</param>
+			</type>
+		</property>
+		<property name="birthDate" column="BIRTHDATE"></property>
+		<property name="idNum" column="ID_NUM"></property>
+		<property name="tel" column="TEL"></property>
+		<property name="department" column="DEPARTMENT"></property>
+		<property name="position" column="POSITION"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 执法仪 -->
+	<class name="com.jsdz.exchange.entity.RecorderX" table="T_RECORDER">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="recCode" column="REC_CODE"></property>
+		<property name="recModel" column="REC_MODEL"></property>
+		<property name="vendor" column="VENDOR"></property>
+		<!-- 状态 -->
+		<property name="state" column="STATE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.exchange.entity.EquipmentState
+				</param>
+			</type>
+		</property>
+		<property name="policeCode" column="POLICE_CODE"></property>
+		<property name="siteCode" column="STATION_CODE"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 执法档案 -->
+	<class name="com.jsdz.exchange.entity.DocumentX" table="T_DOC_INFO">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="policeCode" column="POLICE_CODE"></property>
+		<property name="recCode" column="REC_CODE"></property>
+		<property name="fileName" column="FILE_NAME"></property>
+		<property name="type" column="TYPE"></property>
+		<!-- 状态 -->
+		<property name="cate" column="CATE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.exchange.entity.DocumentCateX
+				</param>
+			</type>
+		</property>
+		<property name="url" column="URL"></property>
+		<property name="lon" column="LON"></property>
+		<property name="lat" column="LAT"></property>
+		<property name="enforceType" column="ENFORCE_TYPE"></property>
+		<property name="shootingTime" column="SHOOTING_TIME"></property>
+		<property name="uploadTime" column="UPLOAD_TIME"></property>
+		<property name="expiredTime" column="EXPIRE_TIME"></property>
+		<property name="fileSize" column="FILE_SIZE"></property>
+		<property name="thumbnail" column="THUMBNAIL"></property>
+		<property name="duration" column="DURATION"></property>
+		<property name="imageWidth" column="IMAGE_WIDTH"></property>
+		<property name="imageHeight" column="IMAGE_HEIGHT"></property>
+		<property name="impLevel" column="IMP_LEVEL">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.digitalevidence.document.model.ImportantLevel
+				</param>
+			</type>
+		</property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime" column="LAST_UPDATE_TIME">
+
+		</property>
+	</class>
+
+	<!-- 警情信息 -->
+	<class name="com.jsdz.exchange.entity.AlarmInfoX" table="T_ALARM_INFO">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="alarmCode" column="ALARM_CODE"></property>
+		<property name="orgCode" column="ORG_CODE"></property>
+		<property name="alarmName" column="ALARM_NAME"></property>
+		<property name="alarmSum" column="ALARM_SUM"></property>
+		<property name="enforceObjType" column="ENFORCE_OBJECT_TYPE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.digitalevidence.alarm.alarm110.model.EnforceObjectType
+				</param>
+			</type>
+		</property>
+		<property name="enforceObjName" column="ENFORCE_OBJECT_NAME"></property>
+		<property name="enforceObjIdNum" column="ENFORCE_OBJECT_ID_NUM"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 警情档案 -->
+	<class name="com.jsdz.exchange.entity.AlarmDocumentX" table="T_CASE_DOC_LINK">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="docId" column="DOC_ID"></property>
+		<property name="alarmCode" column="ALARM_CODE"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+	<!-- 案件信息 -->
+	<class name="com.jsdz.exchange.entity.CaseInfoX" table="T_CASE_INFO">
+		<id name="id" column="ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="caseCode" column="CASE_CODE"></property>
+		<property name="orgCode" column="ORG_CODE"></property>
+		<property name="caseName" column="CASE_NAME"></property>
+		<property name="caseSum" column="CASE_SUM"></property>
+		<property name="alarmCode" column="ALARM_CODE"></property>
+		<property name="enforceObjType" column="ENFORCE_OBJECT_TYPE">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.jsdz.digitalevidence.alarm.alarm110.model.EnforceObjectType
+				</param>
+			</type>
+		</property>
+		<property name="enforceObjName" column="ENFORCE_OBJECT_NAME"></property>
+		<property name="enforceObjIdNum" column="ENFORCE_OBJECT_ID_NUM"></property>
+		<property name="remark" column="REMARK"></property>
+		<property name="createTime" insert="false">
+			<column name="CREATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+		<property name="lastUpdateTime">
+			<column name="LAST_UPDATE_TIME" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+		</property>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory >
+		<property name="show_sql">false</property>
+		<property name="use_sql_comments">false</property>
+		<property name="format_sql">false</property>
+		<property name="hbm2ddl.auto">false</property>
+
+		<!-- SQL方言，这边设定的是MySQL -->		
+		<!-- <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  -->
+		<!--  -->
+		<!-- <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>  -->
+		<!-- SQL方言，这边设定的是Oracle 	-->	
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		
+		
+		<!-- 一次读的数据库记录数 -->		
+		<property name="jdbc.fetch_size">50</property>
+		
+		<!-- 设定对数据库进行批量删除 -->
+		<property name="jdbc.batch_size">30</property>	   
+		
+		<mapping resource="com/jsdz/exchange/marker/impl/hbm/Marker.hbm.xml"></mapping> 
+		<mapping resource="com/jsdz/admin/security/dao/security.hbm.xml"/>
+		<mapping resource="com/jsdz/digitalevidence/site/dao/site.hbm.xml"/>
+		<mapping resource="com/jsdz/digitalevidence/document/dao/Document.hbm.xml"/>	
+        <mapping resource="com/jsdz/digitalevidence/alarm/alarm110/model/Case.hbm.xml"/>
+        <mapping resource="com/jsdz/digitalevidence/alarm/alarm.hbm.xml"/>
+        <mapping resource="com/jsdz/scheduler/repo/dao/hibernate/hbm/Job.hbm.xml"/>
+        
+	</session-factory>
+</hibernate-configuration>

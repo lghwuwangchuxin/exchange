@@ -1,0 +1,1923 @@
+[INFO ] 2017-11-07 10:14:44,435 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-11-07 10:14:44,468 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47d90b9e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1184ab05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3aefe5e5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@149e0f5d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b1473ab]
+[INFO ] 2017-11-07 10:14:44,591 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-11-07 10:14:45,231 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:14:45,299 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-handler.xml]
+[INFO ] 2017-11-07 10:14:45,333 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'documentHandler': replacing [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-document\target\classes\com\jsdz\digitalevidence\document\service\DocumentHandler.class]] with [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:14:45,339 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'demoHandler': replacing [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-ftpserver\target\test-classes\com\jsdz\test\ftpserver\DemoHandler.class]] with [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:14:45,347 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-documenttype.xml]
+[INFO ] 2017-11-07 10:14:45,368 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:14:45,392 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'ftpServer': replacing [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#0; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null] with [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#1; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null]
+[INFO ] 2017-11-07 10:14:45,393 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-dynsql.xml]
+[INFO ] 2017-11-07 10:14:45,434 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-11-07 10:14:45,453 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-reportengine.xml]
+[INFO ] 2017-11-07 10:14:45,492 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@393671df: startup date [Tue Nov 07 10:14:45 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-07 10:14:45,996 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-11-07 10:14:46,011 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO ] 2017-11-07 10:14:46,246 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-11-07 10:14:46,736 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-11-07 10:14:47,079 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-11-07 10:14:47,085 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-11-07 10:14:47,087 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-11-07 10:14:47,089 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-11-07 10:14:47,092 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-11-07 10:14:47,152 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/E:/workstudio/%e9%a1%b9%e7%9b%ae/%e5%9b%9b%e5%b7%9d%e6%89%a7%e6%b3%95%e9%9f%b3%e8%a7%86%e9%a2%91%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f/%e5%b7%a5%e7%a8%8b-2.4/digitalevidence-ftpserver/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-11-07 10:14:47,184 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-11-07 10:14:47,206 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Document.hbm.xml
+[INFO ] 2017-11-07 10:14:47,248 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Case.hbm.xml
+[INFO ] 2017-11-07 10:14:47,275 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/site/dao/site.hbm.xml
+[INFO ] 2017-11-07 10:14:47,307 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/admin/security/dao/security.hbm.xml
+[INFO ] 2017-11-07 10:14:47,334 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-11-07 10:14:47,394 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Document -> T_Doc
+[INFO ] 2017-11-07 10:14:47,431 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.RecorderLog -> T_Doc
+[INFO ] 2017-11-07 10:14:47,433 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Video -> T_Doc
+[INFO ] 2017-11-07 10:14:47,439 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.FLV -> T_Doc
+[INFO ] 2017-11-07 10:14:47,442 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.MP4 -> T_Doc
+[INFO ] 2017-11-07 10:14:47,444 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Audio -> T_Doc
+[INFO ] 2017-11-07 10:14:47,450 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Picture -> T_Doc
+[INFO ] 2017-11-07 10:14:47,453 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.bean.DocumentBean -> DocumentBean
+[INFO ] 2017-11-07 10:14:47,457 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Case -> T_CASE
+[INFO ] 2017-11-07 10:14:47,462 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Case.docs -> t_case_doc
+[INFO ] 2017-11-07 10:14:47,467 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Evidence -> T_CASE_EVIDENCE
+[INFO ] 2017-11-07 10:14:47,468 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.origins -> t_case_evidence_source
+[INFO ] 2017-11-07 10:14:47,469 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.docs -> t_case_evidence_doc
+[INFO ] 2017-11-07 10:14:47,470 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.EnforceType -> T_Enforce_Type
+[INFO ] 2017-11-07 10:14:47,471 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Site -> T_site
+[INFO ] 2017-11-07 10:14:47,479 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Recorder -> T_Recorder
+[INFO ] 2017-11-07 10:14:47,481 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.RecorderEmployees -> T_RecorderEmployees
+[INFO ] 2017-11-07 10:14:47,484 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.TransLog -> ftp_translog
+[INFO ] 2017-11-07 10:14:47,486 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteLost -> T_SiteLost
+[INFO ] 2017-11-07 10:14:47,488 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteActivite -> T_SiteActivite
+[INFO ] 2017-11-07 10:14:47,490 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.bean.SiteStatisticalDTO -> T_SiteStatisticaldto
+[INFO ] 2017-11-07 10:14:47,492 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Region -> admin_region
+[INFO ] 2017-11-07 10:14:47,496 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.RegionType -> admin_regiontype
+[INFO ] 2017-11-07 10:14:47,497 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Department -> admin_department
+[INFO ] 2017-11-07 10:14:47,500 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Position -> admin_position
+[INFO ] 2017-11-07 10:14:47,502 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Organization -> admin_organization
+[INFO ] 2017-11-07 10:14:47,503 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Employees -> admin_employees
+[INFO ] 2017-11-07 10:14:47,504 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Operator -> admin_operators
+[INFO ] 2017-11-07 10:14:47,506 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Role -> admin_roles
+[INFO ] 2017-11-07 10:14:47,508 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperatorRole -> admin_operatorroles
+[INFO ] 2017-11-07 10:14:47,511 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Action -> admin_actions
+[INFO ] 2017-11-07 10:14:47,514 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleAction -> admin_roleactions
+[INFO ] 2017-11-07 10:14:47,516 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperateLog -> admin_operateLogs
+[INFO ] 2017-11-07 10:14:47,518 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SysConfig -> admin_sysconfig
+[INFO ] 2017-11-07 10:14:47,521 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RsaKey -> admin_rsakey
+[INFO ] 2017-11-07 10:14:47,523 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.OrganizationBean -> admin_organizationbean_bean
+[INFO ] 2017-11-07 10:14:47,525 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.RegionBean -> admin_regionBean_bean
+[INFO ] 2017-11-07 10:14:47,527 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SystemMenu -> admin_systemmenu
+[INFO ] 2017-11-07 10:14:47,528 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleMenu -> admin_role_menu
+[INFO ] 2017-11-07 10:14:47,530 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.SystemMenuBean -> SystemMenuBean
+[INFO ] 2017-11-07 10:14:47,532 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.RoleMenuBean -> temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:14:47,537 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-11-07 10:14:47,539 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-11-07 10:14:47,546 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-11-07 10:14:47,556 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-11-07 10:14:47,695 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1689r154wvg31kzxik1|5769e7ae, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1689r154wvg31kzxik1|5769e7ae, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.99:3306/digitalevidence?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-11-07 10:14:48,037 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-11-07 10:14:48,051 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : MySQL
+    version : 5.7.18-log
+      major : 5
+      minor : 7
+[INFO ] 2017-11-07 10:14:48,051 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )
+      major : 5
+      minor : 1
+[INFO ] 2017-11-07 10:14:48,057 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-11-07 10:14:48,058 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-11-07 10:14:48,058 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-11-07 10:14:48,059 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-11-07 10:14:48,059 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-11-07 10:14:48,059 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-11-07 10:14:48,060 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-11-07 10:14:48,060 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-11-07 10:14:48,060 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-11-07 10:14:48,060 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-11-07 10:14:48,061 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-11-07 10:14:48,062 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-11-07 10:14:48,062 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: disabled
+[INFO ] 2017-11-07 10:14:48,062 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-11-07 10:14:48,063 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-11-07 10:14:48,063 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:14:48,065 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:14:48,066 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-11-07 10:14:48,066 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-11-07 10:14:48,067 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-11-07 10:14:48,067 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-11-07 10:14:48,067 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-11-07 10:14:48,069 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-11-07 10:14:48,069 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-11-07 10:14:48,073 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-11-07 10:14:48,073 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-11-07 10:14:48,074 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-11-07 10:14:48,074 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-11-07 10:14:48,075 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-11-07 10:14:48,090 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-11-07 10:14:48,099 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:14:48,100 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:14:48,100 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@111610e6
+[INFO ] 2017-11-07 10:14:48,101 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7fae4d4a
+[INFO ] 2017-11-07 10:14:48,101 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6813a331
+[INFO ] 2017-11-07 10:14:48,101 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4bf324f9
+[INFO ] 2017-11-07 10:14:48,102 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:14:48,102 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:14:48,103 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@48b0e701
+[INFO ] 2017-11-07 10:14:48,573 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-11-07 10:14:48,579 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:155)
+Running hbm2ddl schema update
+[INFO ] 2017-11-07 10:14:48,579 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:167)
+fetching database metadata
+[INFO ] 2017-11-07 10:14:48,584 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:179)
+updating schema
+[INFO ] 2017-11-07 10:14:48,619 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.documentbean
+[INFO ] 2017-11-07 10:14:48,620 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [cate, createtime, policecode, comments, policename, enforcetypeid, type, equimentcode, implevelrec, storagetype, duration, sitecode, clarity, orgname, orgpath, enforcetypename, id, implevel, docname, siteaddr, uploadtime, filem]
+[INFO ] 2017-11-07 10:14:48,620 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,621 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,629 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.systemmenubean
+[INFO ] 2017-11-07 10:14:48,630 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [isshow, createtime, parentname, menuname, menuurl, imageurl, menutype, id, sort, parentid]
+[INFO ] 2017-11-07 10:14:48,630 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,631 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,641 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case
+[INFO ] 2017-11-07 10:14:48,641 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [receipt_alarm_num, case_code, enforce_type, disposal_alarm_num, level, case_name, case_id, case_type]
+[INFO ] 2017-11-07 10:14:48,642 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,642 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,652 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence
+[INFO ] 2017-11-07 10:14:48,652 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [case_id]
+[INFO ] 2017-11-07 10:14:48,652 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk168291db9a7b931]
+[INFO ] 2017-11-07 10:14:48,653 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk168291db9a7b931, primary]
+[INFO ] 2017-11-07 10:14:48,665 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_doc
+[INFO ] 2017-11-07 10:14:48,666 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [storage_type, doc_size, type, enforce_id, duration, content_type, doc_name, case_id, doc_uri, police_id, height, imp_level_rec, cate, create_time, recorder_id, doc_id, alarm_code, upload_time, doc_index, imp_level, site_id, width, comment, expiry_time, video_clarity]
+[INFO ] 2017-11-07 10:14:48,666 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad65c7add1, fk123405060767657, fk4cbf2ad4960f77d]
+[INFO ] 2017-11-07 10:14:48,667 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad2017c8b1_idx, fk4cbf2ad65c7add1, fk4cbf2ad4960f77d, primary]
+[INFO ] 2017-11-07 10:14:48,674 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_enforce_type
+[INFO ] 2017-11-07 10:14:48,674 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [descs, name, id]
+[INFO ] 2017-11-07 10:14:48,675 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,675 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,684 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorder
+[INFO ] 2017-11-07 10:14:48,684 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [code, vendor, site_id, model, id, capacity]
+[INFO ] 2017-11-07 10:14:48,685 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk1b55c6965c7add1]
+[INFO ] 2017-11-07 10:14:48,685 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [code, fk1b55c6965c7add1, primary]
+[INFO ] 2017-11-07 10:14:48,706 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorderemployees
+[INFO ] 2017-11-07 10:14:48,707 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [inused, create_time, recorder_id, site_id, id, employees_id]
+[INFO ] 2017-11-07 10:14:48,707 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848]
+[INFO ] 2017-11-07 10:14:48,707 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848, primary]
+[INFO ] 2017-11-07 10:14:48,714 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_siteactivite
+[INFO ] 2017-11-07 10:14:48,715 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, _id, total_time, activite_time]
+[INFO ] 2017-11-07 10:14:48,715 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,715 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,723 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitelost
+[INFO ] 2017-11-07 10:14:48,724 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, connect_time, lost_time, _id]
+[INFO ] 2017-11-07 10:14:48,724 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,724 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,732 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitestatisticaldto
+[INFO ] 2017-11-07 10:14:48,733 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [filecount, siteno, memory, disksize, updatedate, sitename, cpu, vediolen, id, onlinesecond]
+[INFO ] 2017-11-07 10:14:48,733 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,733 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,742 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_site
+[INFO ] 2017-11-07 10:14:48,742 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [usb_num, memory, site_type, expiredate, secret_key, site_no, update_time, last_time, id, state, createtime, address, identify_code, cpu, disk_size, version, timelimit, site_name, site_ip, online_len, organization_id, http, admin_tel, admin_name, open]
+[INFO ] 2017-11-07 10:14:48,743 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk94c7ac52530f372a]
+[INFO ] 2017-11-07 10:14:48,743 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk94c7ac52530f372a, primary]
+[INFO ] 2017-11-07 10:14:48,750 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_actions
+[INFO ] 2017-11-07 10:14:48,751 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _index, _tag, _id, _url]
+[INFO ] 2017-11-07 10:14:48,751 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,751 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,763 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_department
+[INFO ] 2017-11-07 10:14:48,764 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _name, _id, _description]
+[INFO ] 2017-11-07 10:14:48,764 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,765 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,777 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_employees
+[INFO ] 2017-11-07 10:14:48,778 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_male, _birthdate, _createtime, _name, _departmentid, _organizationid, _age, _positionid, _id, _mail, _mobile, _worknumber, _idnum]
+[INFO ] 2017-11-07 10:14:48,778 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30]
+[INFO ] 2017-11-07 10:14:48,778 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30, primary]
+[INFO ] 2017-11-07 10:14:48,786 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatelogs
+[INFO ] 2017-11-07 10:14:48,787 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_logcontent, _logtype, _logcreatetime, _logtypestr, _logcreatorid, _name, _loginname, _querybegintime, _fromip, _id, _queryendtime, _worknumber]
+[INFO ] 2017-11-07 10:14:48,787 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,787 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf267c4639066af98, primary]
+[INFO ] 2017-11-07 10:14:48,796 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatorroles
+[INFO ] 2017-11-07 10:14:48,797 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _createbyid, _operatorid]
+[INFO ] 2017-11-07 10:14:48,797 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283]
+[INFO ] 2017-11-07 10:14:48,797 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283, primary]
+[INFO ] 2017-11-07 10:14:48,804 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operators
+[INFO ] 2017-11-07 10:14:48,805 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_password, _operatorrolestr, _state, _loginname, _employeesid, _id, _description]
+[INFO ] 2017-11-07 10:14:48,805 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [foreign_index_key]
+[INFO ] 2017-11-07 10:14:48,805 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk10d535fc7208dd4, primary]
+[INFO ] 2017-11-07 10:14:48,813 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organization
+[INFO ] 2017-11-07 10:14:48,814 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _regionid, _orgtype, _parentid, _orgcode, _orgname, _id, _path]
+[INFO ] 2017-11-07 10:14:48,814 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827]
+[INFO ] 2017-11-07 10:14:48,814 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827, primary]
+[INFO ] 2017-11-07 10:14:48,821 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organizationbean_bean
+[INFO ] 2017-11-07 10:14:48,822 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [orgtype, path, createtime, parentname, orgname, regionid, parentcode, orgcode, regionname, id, state, parentid]
+[INFO ] 2017-11-07 10:14:48,823 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,823 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,829 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_position
+[INFO ] 2017-11-07 10:14:48,830 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _id, _description, _position]
+[INFO ] 2017-11-07 10:14:48,830 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,831 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,840 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_region
+[INFO ] 2017-11-07 10:14:48,840 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _parentid, _id, _regionname, _regiontypeid]
+[INFO ] 2017-11-07 10:14:48,840 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf37599e4e9a1da46, fkf37599e4334d9de8]
+[INFO ] 2017-11-07 10:14:48,841 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf37599e4e9a1da46, fkf37599e4334d9de8, primary]
+[INFO ] 2017-11-07 10:14:48,847 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regionbean_bean
+[INFO ] 2017-11-07 10:14:48,848 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [createtime, parentname, regionname, regiontypeid, id, regiontypename, parentid]
+[INFO ] 2017-11-07 10:14:48,848 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,848 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,855 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regiontype
+[INFO ] 2017-11-07 10:14:48,855 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _level, _id, _description]
+[INFO ] 2017-11-07 10:14:48,856 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,856 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,864 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_role_menu
+[INFO ] 2017-11-07 10:14:48,865 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, role_id, id, menu_id]
+[INFO ] 2017-11-07 10:14:48,867 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b]
+[INFO ] 2017-11-07 10:14:48,867 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b, primary]
+[INFO ] 2017-11-07 10:14:48,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roleactions
+[INFO ] 2017-11-07 10:14:48,875 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _actionid]
+[INFO ] 2017-11-07 10:14:48,875 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk681a5ad7b202e378, fk681a5ad712268038]
+[INFO ] 2017-11-07 10:14:48,875 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk681a5ad7b202e378, fk681a5ad712268038, primary]
+[INFO ] 2017-11-07 10:14:48,881 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roles
+[INFO ] 2017-11-07 10:14:48,882 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _rolelevel, _id, _description, _rolename, _actionnames, _actionstr]
+[INFO ] 2017-11-07 10:14:48,883 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,883 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,890 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_rsakey
+[INFO ] 2017-11-07 10:14:48,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _uniquekey, _privatekey, _publickey, _id]
+[INFO ] 2017-11-07 10:14:48,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,901 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_sysconfig
+[INFO ] 2017-11-07 10:14:48,901 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_sysconfigvalue, _sysconfigdesc, _id, _sysreserved, _sysconfigcreatetime, _sysconfigkey]
+[INFO ] 2017-11-07 10:14:48,902 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,902 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,908 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_systemmenu
+[INFO ] 2017-11-07 10:14:48,908 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, menu_type, image_url, parent_id, menu_name, menu_url, _menuname, id, sort, is_show]
+[INFO ] 2017-11-07 10:14:48,909 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:14:48,909 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary, fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:14:48,916 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.ftp_translog
+[INFO ] 2017-11-07 10:14:48,916 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_address, _transtime, _logtype, _recordercode, _filesize, _filetype, _id, _siteno, _fileurl, _sitename, _filename]
+[INFO ] 2017-11-07 10:14:48,917 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,917 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:14:48,942 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_doc
+[INFO ] 2017-11-07 10:14:48,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [doc_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:14:48,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb7f68b14de0cd494, fkb7f68b149a7b931]
+[INFO ] 2017-11-07 10:14:48,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb7f68b14de0cd494, fkb7f68b149a7b931, doc_id, primary]
+[INFO ] 2017-11-07 10:14:48,954 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_doc
+[INFO ] 2017-11-07 10:14:48,954 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:14:48,954 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf6c920f431a748d8, fkf6c920f4de0cd494]
+[INFO ] 2017-11-07 10:14:48,955 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf6c920f431a748d8, fkf6c920f4de0cd494, primary]
+[INFO ] 2017-11-07 10:14:48,962 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_source
+[INFO ] 2017-11-07 10:14:48,962 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:14:48,963 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkd13462dfde0cd494, fkd13462df31a748d8]
+[INFO ] 2017-11-07 10:14:48,963 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkd13462dfde0cd494, fkd13462df31a748d8, primary]
+[INFO ] 2017-11-07 10:14:48,975 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:14:48,976 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [name, checked, pid, id]
+[INFO ] 2017-11-07 10:14:48,976 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:14:48,977 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[ERROR] 2017-11-07 10:14:48,986 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-11-07 10:14:48,986 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[INFO ] 2017-11-07 10:14:48,986 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:217)
+schema update complete
+[WARN ] 2017-11-07 10:14:49,568 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentHandler': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.jsdz.digitalevidence.document.service.DocumentService com.jsdz.digitalevidence.document.service.DocumentHandler.docService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.jsdz.digitalevidence.document.service.DocumentService com.jsdz.digitalevidence.document.service.DocumentHandler.docService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 41 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 43 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 54 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:259)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 56 more
+[INFO ] 2017-11-07 10:14:49,603 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-11-07 10:14:49,605 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing
+[ERROR] 2017-11-07 10:14:49,617 method:org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:215)
+Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1184ab05] to prepare test instance [com.jsdz.test.ftpserver.TestServer@9225652]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentHandler': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.jsdz.digitalevidence.document.service.DocumentService com.jsdz.digitalevidence.document.service.DocumentHandler.docService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.jsdz.digitalevidence.document.service.DocumentService com.jsdz.digitalevidence.document.service.DocumentHandler.docService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 41 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'documentServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 43 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private java.lang.String com.jsdz.digitalevidence.document.service.DocumentServiceImpl.documentJobGroup; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 54 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'document.jobgroup' in string value "${document.jobgroup}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:259)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:955)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 56 more
+[INFO ] 2017-11-07 10:15:39,787 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-11-07 10:15:39,815 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47d90b9e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1184ab05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3aefe5e5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@149e0f5d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b1473ab]
+[INFO ] 2017-11-07 10:15:39,973 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-11-07 10:15:40,566 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:15:40,626 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-handler.xml]
+[INFO ] 2017-11-07 10:15:40,652 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'documentHandler': replacing [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-document\target\classes\com\jsdz\digitalevidence\document\service\DocumentHandler.class]] with [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:15:40,658 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'demoHandler': replacing [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-ftpserver\target\test-classes\com\jsdz\test\ftpserver\DemoHandler.class]] with [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:15:40,661 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-documenttype.xml]
+[INFO ] 2017-11-07 10:15:40,683 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:15:40,720 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'ftpServer': replacing [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#0; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null] with [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#1; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null]
+[INFO ] 2017-11-07 10:15:40,723 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-dynsql.xml]
+[INFO ] 2017-11-07 10:15:40,745 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-11-07 10:15:40,769 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-reportengine.xml]
+[INFO ] 2017-11-07 10:15:40,793 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@393671df: startup date [Tue Nov 07 10:15:40 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-07 10:15:41,296 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-11-07 10:15:41,311 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO ] 2017-11-07 10:15:41,531 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-11-07 10:15:42,032 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-11-07 10:15:42,336 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-11-07 10:15:42,341 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-11-07 10:15:42,343 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-11-07 10:15:42,345 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-11-07 10:15:42,348 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-11-07 10:15:42,408 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/E:/workstudio/%e9%a1%b9%e7%9b%ae/%e5%9b%9b%e5%b7%9d%e6%89%a7%e6%b3%95%e9%9f%b3%e8%a7%86%e9%a2%91%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f/%e5%b7%a5%e7%a8%8b-2.4/digitalevidence-ftpserver/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-11-07 10:15:42,439 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-11-07 10:15:42,466 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Document.hbm.xml
+[INFO ] 2017-11-07 10:15:42,517 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Case.hbm.xml
+[INFO ] 2017-11-07 10:15:42,539 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/site/dao/site.hbm.xml
+[INFO ] 2017-11-07 10:15:42,564 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/admin/security/dao/security.hbm.xml
+[INFO ] 2017-11-07 10:15:42,591 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-11-07 10:15:42,650 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Document -> T_Doc
+[INFO ] 2017-11-07 10:15:42,683 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.RecorderLog -> T_Doc
+[INFO ] 2017-11-07 10:15:42,684 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Video -> T_Doc
+[INFO ] 2017-11-07 10:15:42,686 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.FLV -> T_Doc
+[INFO ] 2017-11-07 10:15:42,687 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.MP4 -> T_Doc
+[INFO ] 2017-11-07 10:15:42,688 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Audio -> T_Doc
+[INFO ] 2017-11-07 10:15:42,689 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Picture -> T_Doc
+[INFO ] 2017-11-07 10:15:42,691 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.bean.DocumentBean -> DocumentBean
+[INFO ] 2017-11-07 10:15:42,694 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Case -> T_CASE
+[INFO ] 2017-11-07 10:15:42,699 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Case.docs -> t_case_doc
+[INFO ] 2017-11-07 10:15:42,704 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Evidence -> T_CASE_EVIDENCE
+[INFO ] 2017-11-07 10:15:42,705 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.origins -> t_case_evidence_source
+[INFO ] 2017-11-07 10:15:42,706 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.docs -> t_case_evidence_doc
+[INFO ] 2017-11-07 10:15:42,706 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.EnforceType -> T_Enforce_Type
+[INFO ] 2017-11-07 10:15:42,707 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Site -> T_site
+[INFO ] 2017-11-07 10:15:42,713 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Recorder -> T_Recorder
+[INFO ] 2017-11-07 10:15:42,714 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.RecorderEmployees -> T_RecorderEmployees
+[INFO ] 2017-11-07 10:15:42,716 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.TransLog -> ftp_translog
+[INFO ] 2017-11-07 10:15:42,719 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteLost -> T_SiteLost
+[INFO ] 2017-11-07 10:15:42,721 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteActivite -> T_SiteActivite
+[INFO ] 2017-11-07 10:15:42,723 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.bean.SiteStatisticalDTO -> T_SiteStatisticaldto
+[INFO ] 2017-11-07 10:15:42,725 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Region -> admin_region
+[INFO ] 2017-11-07 10:15:42,729 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.RegionType -> admin_regiontype
+[INFO ] 2017-11-07 10:15:42,734 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Department -> admin_department
+[INFO ] 2017-11-07 10:15:42,737 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Position -> admin_position
+[INFO ] 2017-11-07 10:15:42,739 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Organization -> admin_organization
+[INFO ] 2017-11-07 10:15:42,740 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Employees -> admin_employees
+[INFO ] 2017-11-07 10:15:42,742 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Operator -> admin_operators
+[INFO ] 2017-11-07 10:15:42,744 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Role -> admin_roles
+[INFO ] 2017-11-07 10:15:42,746 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperatorRole -> admin_operatorroles
+[INFO ] 2017-11-07 10:15:42,749 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Action -> admin_actions
+[INFO ] 2017-11-07 10:15:42,751 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleAction -> admin_roleactions
+[INFO ] 2017-11-07 10:15:42,753 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperateLog -> admin_operateLogs
+[INFO ] 2017-11-07 10:15:42,755 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SysConfig -> admin_sysconfig
+[INFO ] 2017-11-07 10:15:42,758 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RsaKey -> admin_rsakey
+[INFO ] 2017-11-07 10:15:42,760 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.OrganizationBean -> admin_organizationbean_bean
+[INFO ] 2017-11-07 10:15:42,763 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.RegionBean -> admin_regionBean_bean
+[INFO ] 2017-11-07 10:15:42,765 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SystemMenu -> admin_systemmenu
+[INFO ] 2017-11-07 10:15:42,767 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleMenu -> admin_role_menu
+[INFO ] 2017-11-07 10:15:42,768 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.SystemMenuBean -> SystemMenuBean
+[INFO ] 2017-11-07 10:15:42,771 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.RoleMenuBean -> temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:15:42,777 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-11-07 10:15:42,780 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-11-07 10:15:42,786 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-11-07 10:15:42,796 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-11-07 10:15:42,869 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1689r154y23jzeo807|5769e7ae, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1689r154y23jzeo807|5769e7ae, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.99:3306/digitalevidence?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-11-07 10:15:43,276 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-11-07 10:15:43,289 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : MySQL
+    version : 5.7.18-log
+      major : 5
+      minor : 7
+[INFO ] 2017-11-07 10:15:43,289 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )
+      major : 5
+      minor : 1
+[INFO ] 2017-11-07 10:15:43,293 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-11-07 10:15:43,294 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-11-07 10:15:43,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-11-07 10:15:43,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-11-07 10:15:43,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-11-07 10:15:43,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-11-07 10:15:43,296 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-11-07 10:15:43,297 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-11-07 10:15:43,297 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-11-07 10:15:43,297 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-11-07 10:15:43,298 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-11-07 10:15:43,299 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-11-07 10:15:43,299 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: disabled
+[INFO ] 2017-11-07 10:15:43,299 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-11-07 10:15:43,300 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-11-07 10:15:43,300 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:15:43,302 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:15:43,302 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-11-07 10:15:43,302 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-11-07 10:15:43,303 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-11-07 10:15:43,303 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-11-07 10:15:43,304 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-11-07 10:15:43,305 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-11-07 10:15:43,305 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-11-07 10:15:43,309 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-11-07 10:15:43,309 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-11-07 10:15:43,310 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-11-07 10:15:43,310 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-11-07 10:15:43,311 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-11-07 10:15:43,327 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-11-07 10:15:43,334 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@111610e6
+[INFO ] 2017-11-07 10:15:43,336 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7fae4d4a
+[INFO ] 2017-11-07 10:15:43,337 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:15:43,337 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:15:43,338 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:15:43,338 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:15:43,338 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6813a331
+[INFO ] 2017-11-07 10:15:43,339 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@48b0e701
+[INFO ] 2017-11-07 10:15:43,339 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4bf324f9
+[INFO ] 2017-11-07 10:15:43,798 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-11-07 10:15:43,806 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:155)
+Running hbm2ddl schema update
+[INFO ] 2017-11-07 10:15:43,807 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:167)
+fetching database metadata
+[INFO ] 2017-11-07 10:15:43,811 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:179)
+updating schema
+[INFO ] 2017-11-07 10:15:43,853 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.documentbean
+[INFO ] 2017-11-07 10:15:43,854 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [cate, createtime, policecode, comments, policename, enforcetypeid, type, equimentcode, implevelrec, storagetype, duration, sitecode, clarity, orgname, orgpath, enforcetypename, id, implevel, docname, siteaddr, uploadtime, filem]
+[INFO ] 2017-11-07 10:15:43,854 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,855 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,864 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.systemmenubean
+[INFO ] 2017-11-07 10:15:43,864 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [isshow, createtime, parentname, menuname, menuurl, imageurl, menutype, id, sort, parentid]
+[INFO ] 2017-11-07 10:15:43,865 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,865 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,873 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case
+[INFO ] 2017-11-07 10:15:43,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [receipt_alarm_num, case_code, enforce_type, disposal_alarm_num, level, case_name, case_id, case_type]
+[INFO ] 2017-11-07 10:15:43,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,884 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence
+[INFO ] 2017-11-07 10:15:43,884 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [case_id]
+[INFO ] 2017-11-07 10:15:43,884 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk168291db9a7b931]
+[INFO ] 2017-11-07 10:15:43,885 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk168291db9a7b931, primary]
+[INFO ] 2017-11-07 10:15:43,898 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_doc
+[INFO ] 2017-11-07 10:15:43,898 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [storage_type, doc_size, type, enforce_id, duration, content_type, doc_name, case_id, doc_uri, police_id, height, imp_level_rec, cate, create_time, recorder_id, doc_id, alarm_code, upload_time, doc_index, imp_level, site_id, width, comment, expiry_time, video_clarity]
+[INFO ] 2017-11-07 10:15:43,899 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad65c7add1, fk123405060767657, fk4cbf2ad4960f77d]
+[INFO ] 2017-11-07 10:15:43,899 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad2017c8b1_idx, fk4cbf2ad65c7add1, fk4cbf2ad4960f77d, primary]
+[INFO ] 2017-11-07 10:15:43,906 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_enforce_type
+[INFO ] 2017-11-07 10:15:43,906 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [descs, name, id]
+[INFO ] 2017-11-07 10:15:43,907 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,907 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,920 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorder
+[INFO ] 2017-11-07 10:15:43,920 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [code, vendor, site_id, model, id, capacity]
+[INFO ] 2017-11-07 10:15:43,921 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk1b55c6965c7add1]
+[INFO ] 2017-11-07 10:15:43,921 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [code, fk1b55c6965c7add1, primary]
+[INFO ] 2017-11-07 10:15:43,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorderemployees
+[INFO ] 2017-11-07 10:15:43,944 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [inused, create_time, recorder_id, site_id, id, employees_id]
+[INFO ] 2017-11-07 10:15:43,944 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848]
+[INFO ] 2017-11-07 10:15:43,944 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848, primary]
+[INFO ] 2017-11-07 10:15:43,954 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_siteactivite
+[INFO ] 2017-11-07 10:15:43,954 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, _id, total_time, activite_time]
+[INFO ] 2017-11-07 10:15:43,955 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,955 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,962 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitelost
+[INFO ] 2017-11-07 10:15:43,962 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, connect_time, lost_time, _id]
+[INFO ] 2017-11-07 10:15:43,963 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,963 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,973 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitestatisticaldto
+[INFO ] 2017-11-07 10:15:43,973 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [filecount, siteno, memory, disksize, updatedate, sitename, cpu, vediolen, id, onlinesecond]
+[INFO ] 2017-11-07 10:15:43,974 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,974 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:43,986 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_site
+[INFO ] 2017-11-07 10:15:43,986 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [usb_num, memory, site_type, expiredate, secret_key, site_no, update_time, last_time, id, state, createtime, address, identify_code, cpu, disk_size, version, timelimit, site_name, site_ip, online_len, organization_id, http, admin_tel, admin_name, open]
+[INFO ] 2017-11-07 10:15:43,986 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk94c7ac52530f372a]
+[INFO ] 2017-11-07 10:15:43,987 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk94c7ac52530f372a, primary]
+[INFO ] 2017-11-07 10:15:43,995 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_actions
+[INFO ] 2017-11-07 10:15:43,995 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _index, _tag, _id, _url]
+[INFO ] 2017-11-07 10:15:43,996 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:43,996 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,007 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_department
+[INFO ] 2017-11-07 10:15:44,007 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _name, _id, _description]
+[INFO ] 2017-11-07 10:15:44,008 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,008 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,017 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_employees
+[INFO ] 2017-11-07 10:15:44,018 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_male, _birthdate, _createtime, _name, _departmentid, _organizationid, _age, _positionid, _id, _mail, _mobile, _worknumber, _idnum]
+[INFO ] 2017-11-07 10:15:44,018 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30]
+[INFO ] 2017-11-07 10:15:44,018 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30, primary]
+[INFO ] 2017-11-07 10:15:44,026 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatelogs
+[INFO ] 2017-11-07 10:15:44,027 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_logcontent, _logtype, _logcreatetime, _logtypestr, _logcreatorid, _name, _loginname, _querybegintime, _fromip, _id, _queryendtime, _worknumber]
+[INFO ] 2017-11-07 10:15:44,027 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,027 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf267c4639066af98, primary]
+[INFO ] 2017-11-07 10:15:44,035 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatorroles
+[INFO ] 2017-11-07 10:15:44,035 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _createbyid, _operatorid]
+[INFO ] 2017-11-07 10:15:44,035 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283]
+[INFO ] 2017-11-07 10:15:44,036 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283, primary]
+[INFO ] 2017-11-07 10:15:44,043 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operators
+[INFO ] 2017-11-07 10:15:44,044 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_password, _operatorrolestr, _state, _loginname, _employeesid, _id, _description]
+[INFO ] 2017-11-07 10:15:44,044 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [foreign_index_key]
+[INFO ] 2017-11-07 10:15:44,044 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk10d535fc7208dd4, primary]
+[INFO ] 2017-11-07 10:15:44,058 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organization
+[INFO ] 2017-11-07 10:15:44,059 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _regionid, _orgtype, _parentid, _orgcode, _orgname, _id, _path]
+[INFO ] 2017-11-07 10:15:44,059 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827]
+[INFO ] 2017-11-07 10:15:44,059 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827, primary]
+[INFO ] 2017-11-07 10:15:44,067 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organizationbean_bean
+[INFO ] 2017-11-07 10:15:44,067 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [orgtype, path, createtime, parentname, orgname, regionid, parentcode, orgcode, regionname, id, state, parentid]
+[INFO ] 2017-11-07 10:15:44,067 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,068 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,074 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_position
+[INFO ] 2017-11-07 10:15:44,075 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _id, _description, _position]
+[INFO ] 2017-11-07 10:15:44,076 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,076 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,083 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_region
+[INFO ] 2017-11-07 10:15:44,083 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _parentid, _id, _regionname, _regiontypeid]
+[INFO ] 2017-11-07 10:15:44,084 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf37599e4e9a1da46, fkf37599e4334d9de8]
+[INFO ] 2017-11-07 10:15:44,084 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf37599e4e9a1da46, fkf37599e4334d9de8, primary]
+[INFO ] 2017-11-07 10:15:44,090 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regionbean_bean
+[INFO ] 2017-11-07 10:15:44,091 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [createtime, parentname, regionname, regiontypeid, id, regiontypename, parentid]
+[INFO ] 2017-11-07 10:15:44,091 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,091 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,097 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regiontype
+[INFO ] 2017-11-07 10:15:44,098 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _level, _id, _description]
+[INFO ] 2017-11-07 10:15:44,098 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,098 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,106 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_role_menu
+[INFO ] 2017-11-07 10:15:44,107 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, role_id, id, menu_id]
+[INFO ] 2017-11-07 10:15:44,107 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b]
+[INFO ] 2017-11-07 10:15:44,107 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b, primary]
+[INFO ] 2017-11-07 10:15:44,114 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roleactions
+[INFO ] 2017-11-07 10:15:44,115 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _actionid]
+[INFO ] 2017-11-07 10:15:44,115 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk681a5ad7b202e378, fk681a5ad712268038]
+[INFO ] 2017-11-07 10:15:44,116 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk681a5ad7b202e378, fk681a5ad712268038, primary]
+[INFO ] 2017-11-07 10:15:44,122 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roles
+[INFO ] 2017-11-07 10:15:44,123 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _rolelevel, _id, _description, _rolename, _actionnames, _actionstr]
+[INFO ] 2017-11-07 10:15:44,123 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,123 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,131 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_rsakey
+[INFO ] 2017-11-07 10:15:44,132 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _uniquekey, _privatekey, _publickey, _id]
+[INFO ] 2017-11-07 10:15:44,132 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,135 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,153 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_sysconfig
+[INFO ] 2017-11-07 10:15:44,153 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_sysconfigvalue, _sysconfigdesc, _id, _sysreserved, _sysconfigcreatetime, _sysconfigkey]
+[INFO ] 2017-11-07 10:15:44,153 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,154 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,164 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_systemmenu
+[INFO ] 2017-11-07 10:15:44,164 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, menu_type, image_url, parent_id, menu_name, menu_url, _menuname, id, sort, is_show]
+[INFO ] 2017-11-07 10:15:44,164 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:15:44,165 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary, fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:15:44,172 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.ftp_translog
+[INFO ] 2017-11-07 10:15:44,173 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_address, _transtime, _logtype, _recordercode, _filesize, _filetype, _id, _siteno, _fileurl, _sitename, _filename]
+[INFO ] 2017-11-07 10:15:44,173 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,173 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:15:44,189 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_doc
+[INFO ] 2017-11-07 10:15:44,190 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [doc_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:15:44,190 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb7f68b14de0cd494, fkb7f68b149a7b931]
+[INFO ] 2017-11-07 10:15:44,190 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb7f68b14de0cd494, fkb7f68b149a7b931, doc_id, primary]
+[INFO ] 2017-11-07 10:15:44,197 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_doc
+[INFO ] 2017-11-07 10:15:44,197 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:15:44,198 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf6c920f431a748d8, fkf6c920f4de0cd494]
+[INFO ] 2017-11-07 10:15:44,198 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf6c920f431a748d8, fkf6c920f4de0cd494, primary]
+[INFO ] 2017-11-07 10:15:44,205 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_source
+[INFO ] 2017-11-07 10:15:44,205 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:15:44,206 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkd13462dfde0cd494, fkd13462df31a748d8]
+[INFO ] 2017-11-07 10:15:44,206 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkd13462dfde0cd494, fkd13462df31a748d8, primary]
+[INFO ] 2017-11-07 10:15:44,213 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:15:44,214 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [name, checked, pid, id]
+[INFO ] 2017-11-07 10:15:44,214 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:15:44,214 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[ERROR] 2017-11-07 10:15:44,221 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-11-07 10:15:44,221 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[INFO ] 2017-11-07 10:15:44,221 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:217)
+schema update complete
+[INFO ] 2017-11-07 10:15:44,805 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-11-07 10:15:45,011 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-11-07 10:15:45,023 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-11-07 10:15:45,071 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-11-07 10:15:45,072 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-11-07 10:15:45,076 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-11-07 10:15:45,081 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-11-07 10:15:45,084 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'PC-2017033121411510020945021'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-11-07 10:15:45,084 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-11-07 10:15:45,084 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-11-07 10:15:45,088 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e3d7dd
+[INFO ] 2017-11-07 10:15:45,149 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@66383c29
+[INFO ] 2017-11-07 10:15:46,088 method:org.apache.ftpserver.impl.DefaultFtpServer.start(DefaultFtpServer.java:89)
+FTP server started
+[INFO ] 2017-11-07 10:16:15,617 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:159)
+CREATED
+[INFO ] 2017-11-07 10:16:15,624 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:159)
+OPENED
+[INFO ] 2017-11-07 10:16:15,638 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 220 Service ready for new user.
+
+[INFO ] 2017-11-07 10:16:17,624 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: USER jsdz
+[INFO ] 2017-11-07 10:16:17,630 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 331 User name okay, need password for jsdz.
+
+[INFO ] 2017-11-07 10:16:21,618 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: PASS *****
+[INFO ] 2017-11-07 10:16:21,627 method:org.apache.ftpserver.command.impl.PASS.execute(PASS.java:246)
+Login success - jsdz
+[INFO ] 2017-11-07 10:16:21,630 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 230 User logged in, proceed.
+
+[INFO ] 2017-11-07 10:16:24,337 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: TYPE I
+[INFO ] 2017-11-07 10:16:24,341 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 200 Command TYPE okay.
+
+[INFO ] 2017-11-07 10:16:42,793 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: PORT 127,0,0,1,241,202
+[INFO ] 2017-11-07 10:16:42,804 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 200 Command PORT okay.
+
+[INFO ] 2017-11-07 10:16:42,806 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: STOR J800003_00000220170812122520_0001.avi
+[INFO ] 2017-11-07 10:16:43,049 method:org.apache.ftpserver.command.impl.STOR.execute(STOR.java:154)
+File uploaded /J800003_00000220170812122520_0001.avi
+[INFO ] 2017-11-07 10:16:43,050 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:86)
+***getAddress: /127.0.0.1
+[INFO ] 2017-11-07 10:16:43,051 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:87)
+***getHostString: 127.0.0.1
+[INFO ] 2017-11-07 10:19:01,382 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-11-07 10:19:01,416 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47d90b9e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1184ab05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3aefe5e5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@149e0f5d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b1473ab]
+[INFO ] 2017-11-07 10:19:01,550 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-11-07 10:19:02,171 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:19:02,238 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-handler.xml]
+[INFO ] 2017-11-07 10:19:02,267 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'documentHandler': replacing [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-document\target\classes\com\jsdz\digitalevidence\document\service\DocumentHandler.class]] with [Generic bean: class [com.jsdz.digitalevidence.document.service.DocumentHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:19:02,270 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'demoHandler': replacing [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\workstudio\项目\四川执法音视频管理系统\工程-2.4\digitalevidence-ftpserver\target\test-classes\com\jsdz\test\ftpserver\DemoHandler.class]] with [Generic bean: class [com.jsdz.test.ftpserver.DemoHandler]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [testApplicationContext-handler.xml]]
+[INFO ] 2017-11-07 10:19:02,272 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-documenttype.xml]
+[INFO ] 2017-11-07 10:19:02,307 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-ftpserver.xml]
+[INFO ] 2017-11-07 10:19:02,337 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:822)
+Overriding bean definition for bean 'ftpServer': replacing [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#0; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null] with [Generic bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.apache.ftpserver.FtpServerFactory#1; factoryMethodName=createServer; initMethodName=null; destroyMethodName=null]
+[INFO ] 2017-11-07 10:19:02,340 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-dynsql.xml]
+[INFO ] 2017-11-07 10:19:02,363 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-11-07 10:19:02,383 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-reportengine.xml]
+[INFO ] 2017-11-07 10:19:02,410 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@393671df: startup date [Tue Nov 07 10:19:02 CST 2017]; root of context hierarchy
+[INFO ] 2017-11-07 10:19:02,926 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-11-07 10:19:02,939 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO ] 2017-11-07 10:19:03,208 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-11-07 10:19:03,716 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-11-07 10:19:04,044 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-11-07 10:19:04,049 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-11-07 10:19:04,051 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-11-07 10:19:04,054 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-11-07 10:19:04,057 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-11-07 10:19:04,120 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/E:/workstudio/%e9%a1%b9%e7%9b%ae/%e5%9b%9b%e5%b7%9d%e6%89%a7%e6%b3%95%e9%9f%b3%e8%a7%86%e9%a2%91%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f/%e5%b7%a5%e7%a8%8b-2.4/digitalevidence-ftpserver/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-11-07 10:19:04,151 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-11-07 10:19:04,179 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Document.hbm.xml
+[INFO ] 2017-11-07 10:19:04,221 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Case.hbm.xml
+[INFO ] 2017-11-07 10:19:04,246 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/site/dao/site.hbm.xml
+[INFO ] 2017-11-07 10:19:04,273 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/admin/security/dao/security.hbm.xml
+[INFO ] 2017-11-07 10:19:04,311 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-11-07 10:19:04,364 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Document -> T_Doc
+[INFO ] 2017-11-07 10:19:04,405 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.RecorderLog -> T_Doc
+[INFO ] 2017-11-07 10:19:04,406 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Video -> T_Doc
+[INFO ] 2017-11-07 10:19:04,408 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.FLV -> T_Doc
+[INFO ] 2017-11-07 10:19:04,409 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.MP4 -> T_Doc
+[INFO ] 2017-11-07 10:19:04,410 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Audio -> T_Doc
+[INFO ] 2017-11-07 10:19:04,411 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Picture -> T_Doc
+[INFO ] 2017-11-07 10:19:04,413 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.bean.DocumentBean -> DocumentBean
+[INFO ] 2017-11-07 10:19:04,416 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Case -> T_CASE
+[INFO ] 2017-11-07 10:19:04,422 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Case.docs -> t_case_doc
+[INFO ] 2017-11-07 10:19:04,428 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Evidence -> T_CASE_EVIDENCE
+[INFO ] 2017-11-07 10:19:04,429 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.origins -> t_case_evidence_source
+[INFO ] 2017-11-07 10:19:04,429 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.document.model.Evidence.docs -> t_case_evidence_doc
+[INFO ] 2017-11-07 10:19:04,430 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.EnforceType -> T_Enforce_Type
+[INFO ] 2017-11-07 10:19:04,431 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Site -> T_site
+[INFO ] 2017-11-07 10:19:04,437 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Recorder -> T_Recorder
+[INFO ] 2017-11-07 10:19:04,438 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.RecorderEmployees -> T_RecorderEmployees
+[INFO ] 2017-11-07 10:19:04,440 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.TransLog -> ftp_translog
+[INFO ] 2017-11-07 10:19:04,443 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteLost -> T_SiteLost
+[INFO ] 2017-11-07 10:19:04,445 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteActivite -> T_SiteActivite
+[INFO ] 2017-11-07 10:19:04,446 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.bean.SiteStatisticalDTO -> T_SiteStatisticaldto
+[INFO ] 2017-11-07 10:19:04,449 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Region -> admin_region
+[INFO ] 2017-11-07 10:19:04,454 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.RegionType -> admin_regiontype
+[INFO ] 2017-11-07 10:19:04,456 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Department -> admin_department
+[INFO ] 2017-11-07 10:19:04,457 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Position -> admin_position
+[INFO ] 2017-11-07 10:19:04,459 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Organization -> admin_organization
+[INFO ] 2017-11-07 10:19:04,460 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Employees -> admin_employees
+[INFO ] 2017-11-07 10:19:04,463 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Operator -> admin_operators
+[INFO ] 2017-11-07 10:19:04,465 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Role -> admin_roles
+[INFO ] 2017-11-07 10:19:04,467 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperatorRole -> admin_operatorroles
+[INFO ] 2017-11-07 10:19:04,469 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Action -> admin_actions
+[INFO ] 2017-11-07 10:19:04,471 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleAction -> admin_roleactions
+[INFO ] 2017-11-07 10:19:04,473 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperateLog -> admin_operateLogs
+[INFO ] 2017-11-07 10:19:04,475 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SysConfig -> admin_sysconfig
+[INFO ] 2017-11-07 10:19:04,477 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RsaKey -> admin_rsakey
+[INFO ] 2017-11-07 10:19:04,479 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.OrganizationBean -> admin_organizationbean_bean
+[INFO ] 2017-11-07 10:19:04,481 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.RegionBean -> admin_regionBean_bean
+[INFO ] 2017-11-07 10:19:04,483 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SystemMenu -> admin_systemmenu
+[INFO ] 2017-11-07 10:19:04,484 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleMenu -> admin_role_menu
+[INFO ] 2017-11-07 10:19:04,486 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.SystemMenuBean -> SystemMenuBean
+[INFO ] 2017-11-07 10:19:04,488 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.RoleMenuBean -> temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:19:04,493 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-11-07 10:19:04,497 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-11-07 10:19:04,503 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-11-07 10:19:04,512 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-11-07 10:19:04,588 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1689r1552dpm170u728|5769e7ae, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1689r1552dpm170u728|5769e7ae, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://192.168.1.99:3306/digitalevidence?useOldAliasMetadataBehavior=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-11-07 10:19:05,004 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-11-07 10:19:05,017 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : MySQL
+    version : 5.7.18-log
+      major : 5
+      minor : 7
+[INFO ] 2017-11-07 10:19:05,017 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )
+      major : 5
+      minor : 1
+[INFO ] 2017-11-07 10:19:05,020 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-11-07 10:19:05,021 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-11-07 10:19:05,022 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-11-07 10:19:05,022 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-11-07 10:19:05,023 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-11-07 10:19:05,023 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-11-07 10:19:05,024 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-11-07 10:19:05,024 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-11-07 10:19:05,024 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-11-07 10:19:05,025 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-11-07 10:19:05,026 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-11-07 10:19:05,026 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-11-07 10:19:05,026 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: disabled
+[INFO ] 2017-11-07 10:19:05,027 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-11-07 10:19:05,027 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-11-07 10:19:05,028 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:19:05,030 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-11-07 10:19:05,030 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-11-07 10:19:05,031 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-11-07 10:19:05,031 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-11-07 10:19:05,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-11-07 10:19:05,032 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-11-07 10:19:05,033 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-11-07 10:19:05,034 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-11-07 10:19:05,037 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-11-07 10:19:05,038 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-11-07 10:19:05,038 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-11-07 10:19:05,039 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-11-07 10:19:05,039 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-11-07 10:19:05,057 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-11-07 10:19:05,066 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@111610e6
+[INFO ] 2017-11-07 10:19:05,066 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7fae4d4a
+[INFO ] 2017-11-07 10:19:05,067 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:19:05,067 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@5767b2af
+[INFO ] 2017-11-07 10:19:05,068 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:19:05,068 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@99a65d3
+[INFO ] 2017-11-07 10:19:05,068 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6813a331
+[INFO ] 2017-11-07 10:19:05,069 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@48b0e701
+[INFO ] 2017-11-07 10:19:05,069 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4bf324f9
+[INFO ] 2017-11-07 10:19:05,545 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-11-07 10:19:05,551 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:155)
+Running hbm2ddl schema update
+[INFO ] 2017-11-07 10:19:05,552 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:167)
+fetching database metadata
+[INFO ] 2017-11-07 10:19:05,557 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:179)
+updating schema
+[INFO ] 2017-11-07 10:19:05,595 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.documentbean
+[INFO ] 2017-11-07 10:19:05,596 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [cate, createtime, policecode, comments, policename, enforcetypeid, type, equimentcode, implevelrec, storagetype, duration, sitecode, clarity, orgname, orgpath, enforcetypename, id, implevel, docname, siteaddr, uploadtime, filem]
+[INFO ] 2017-11-07 10:19:05,596 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,596 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,607 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.systemmenubean
+[INFO ] 2017-11-07 10:19:05,607 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [isshow, createtime, parentname, menuname, menuurl, imageurl, menutype, id, sort, parentid]
+[INFO ] 2017-11-07 10:19:05,608 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,608 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,617 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case
+[INFO ] 2017-11-07 10:19:05,617 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [receipt_alarm_num, case_code, enforce_type, disposal_alarm_num, level, case_name, case_id, case_type]
+[INFO ] 2017-11-07 10:19:05,617 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,618 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,628 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence
+[INFO ] 2017-11-07 10:19:05,629 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [case_id]
+[INFO ] 2017-11-07 10:19:05,629 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk168291db9a7b931]
+[INFO ] 2017-11-07 10:19:05,629 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk168291db9a7b931, primary]
+[INFO ] 2017-11-07 10:19:05,640 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_doc
+[INFO ] 2017-11-07 10:19:05,640 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [storage_type, doc_size, type, enforce_id, duration, content_type, doc_name, case_id, doc_uri, police_id, height, imp_level_rec, cate, create_time, recorder_id, doc_id, alarm_code, upload_time, doc_index, imp_level, site_id, width, comment, expiry_time, video_clarity]
+[INFO ] 2017-11-07 10:19:05,641 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad65c7add1, fk123405060767657, fk4cbf2ad4960f77d]
+[INFO ] 2017-11-07 10:19:05,641 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk4cbf2ad9a7b931, fk4cbf2ad18f792f1, fk4cbf2ad2017c8b1_idx, fk4cbf2ad65c7add1, fk4cbf2ad4960f77d, primary]
+[INFO ] 2017-11-07 10:19:05,648 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_enforce_type
+[INFO ] 2017-11-07 10:19:05,649 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [descs, name, id]
+[INFO ] 2017-11-07 10:19:05,650 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,650 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,669 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorder
+[INFO ] 2017-11-07 10:19:05,670 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [code, vendor, site_id, model, id, capacity]
+[INFO ] 2017-11-07 10:19:05,671 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk1b55c6965c7add1]
+[INFO ] 2017-11-07 10:19:05,671 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [code, fk1b55c6965c7add1, primary]
+[INFO ] 2017-11-07 10:19:05,679 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_recorderemployees
+[INFO ] 2017-11-07 10:19:05,680 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [inused, create_time, recorder_id, site_id, id, employees_id]
+[INFO ] 2017-11-07 10:19:05,680 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848]
+[INFO ] 2017-11-07 10:19:05,680 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkc55d991c5a727ec5, fkc55d991c6f99a3a5, fkc55d991c4ec19848, primary]
+[INFO ] 2017-11-07 10:19:05,688 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_siteactivite
+[INFO ] 2017-11-07 10:19:05,688 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, _id, total_time, activite_time]
+[INFO ] 2017-11-07 10:19:05,689 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,689 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,696 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitelost
+[INFO ] 2017-11-07 10:19:05,697 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [date, site_no, connect_time, lost_time, _id]
+[INFO ] 2017-11-07 10:19:05,697 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,697 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,707 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_sitestatisticaldto
+[INFO ] 2017-11-07 10:19:05,708 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [filecount, siteno, memory, disksize, updatedate, sitename, cpu, vediolen, id, onlinesecond]
+[INFO ] 2017-11-07 10:19:05,708 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,708 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,718 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_site
+[INFO ] 2017-11-07 10:19:05,718 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [usb_num, memory, site_type, expiredate, secret_key, site_no, update_time, last_time, id, state, createtime, address, identify_code, cpu, disk_size, version, timelimit, site_name, site_ip, online_len, organization_id, http, admin_tel, admin_name, open]
+[INFO ] 2017-11-07 10:19:05,719 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk94c7ac52530f372a]
+[INFO ] 2017-11-07 10:19:05,719 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk94c7ac52530f372a, primary]
+[INFO ] 2017-11-07 10:19:05,731 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_actions
+[INFO ] 2017-11-07 10:19:05,735 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _index, _tag, _id, _url]
+[INFO ] 2017-11-07 10:19:05,735 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,735 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,751 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_department
+[INFO ] 2017-11-07 10:19:05,752 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _name, _id, _description]
+[INFO ] 2017-11-07 10:19:05,752 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,752 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,761 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_employees
+[INFO ] 2017-11-07 10:19:05,761 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_male, _birthdate, _createtime, _name, _departmentid, _organizationid, _age, _positionid, _id, _mail, _mobile, _worknumber, _idnum]
+[INFO ] 2017-11-07 10:19:05,762 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30]
+[INFO ] 2017-11-07 10:19:05,762 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk3b2c56954cf34d1c, fk3b2c5695838b7b6e, fk3b2c569525298b30, primary]
+[INFO ] 2017-11-07 10:19:05,770 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatelogs
+[INFO ] 2017-11-07 10:19:05,770 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_logcontent, _logtype, _logcreatetime, _logtypestr, _logcreatorid, _name, _loginname, _querybegintime, _fromip, _id, _queryendtime, _worknumber]
+[INFO ] 2017-11-07 10:19:05,771 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,771 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf267c4639066af98, primary]
+[INFO ] 2017-11-07 10:19:05,779 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operatorroles
+[INFO ] 2017-11-07 10:19:05,779 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _createbyid, _operatorid]
+[INFO ] 2017-11-07 10:19:05,779 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283]
+[INFO ] 2017-11-07 10:19:05,780 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk498c8ba912268038, fk498c8ba913913c94, fk498c8ba964f1c283, primary]
+[INFO ] 2017-11-07 10:19:05,786 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_operators
+[INFO ] 2017-11-07 10:19:05,787 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_password, _operatorrolestr, _state, _loginname, _employeesid, _id, _description]
+[INFO ] 2017-11-07 10:19:05,788 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [foreign_index_key]
+[INFO ] 2017-11-07 10:19:05,788 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk10d535fc7208dd4, primary]
+[INFO ] 2017-11-07 10:19:05,795 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organization
+[INFO ] 2017-11-07 10:19:05,795 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _regionid, _orgtype, _parentid, _orgcode, _orgname, _id, _path]
+[INFO ] 2017-11-07 10:19:05,796 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827]
+[INFO ] 2017-11-07 10:19:05,796 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb9ec6c23c41c51b2, fkb9ec6c234f6f6827, primary]
+[INFO ] 2017-11-07 10:19:05,804 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_organizationbean_bean
+[INFO ] 2017-11-07 10:19:05,804 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [orgtype, path, createtime, parentname, orgname, regionid, parentcode, orgcode, regionname, id, state, parentid]
+[INFO ] 2017-11-07 10:19:05,805 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,805 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,817 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_position
+[INFO ] 2017-11-07 10:19:05,818 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _id, _description, _position]
+[INFO ] 2017-11-07 10:19:05,818 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,818 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,829 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_region
+[INFO ] 2017-11-07 10:19:05,830 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _parentid, _id, _regionname, _regiontypeid]
+[INFO ] 2017-11-07 10:19:05,831 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf37599e4e9a1da46, fkf37599e4334d9de8]
+[INFO ] 2017-11-07 10:19:05,835 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf37599e4e9a1da46, fkf37599e4334d9de8, primary]
+[INFO ] 2017-11-07 10:19:05,849 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regionbean_bean
+[INFO ] 2017-11-07 10:19:05,849 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [createtime, parentname, regionname, regiontypeid, id, regiontypename, parentid]
+[INFO ] 2017-11-07 10:19:05,849 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,850 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,856 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_regiontype
+[INFO ] 2017-11-07 10:19:05,856 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_name, _level, _id, _description]
+[INFO ] 2017-11-07 10:19:05,858 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,858 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,865 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_role_menu
+[INFO ] 2017-11-07 10:19:05,866 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, role_id, id, menu_id]
+[INFO ] 2017-11-07 10:19:05,866 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b]
+[INFO ] 2017-11-07 10:19:05,866 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb1f68e98f9f0d08c, fkb1f68e985637bd3b, primary]
+[INFO ] 2017-11-07 10:19:05,873 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roleactions
+[INFO ] 2017-11-07 10:19:05,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _roleid, _id, _actionid]
+[INFO ] 2017-11-07 10:19:05,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk681a5ad7b202e378, fk681a5ad712268038]
+[INFO ] 2017-11-07 10:19:05,874 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fk681a5ad7b202e378, fk681a5ad712268038, primary]
+[INFO ] 2017-11-07 10:19:05,881 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_roles
+[INFO ] 2017-11-07 10:19:05,882 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _rolelevel, _id, _description, _rolename, _actionnames, _actionstr]
+[INFO ] 2017-11-07 10:19:05,882 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,882 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_rsakey
+[INFO ] 2017-11-07 10:19:05,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_createtime, _uniquekey, _privatekey, _publickey, _id]
+[INFO ] 2017-11-07 10:19:05,891 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,892 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,899 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_sysconfig
+[INFO ] 2017-11-07 10:19:05,900 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_sysconfigvalue, _sysconfigdesc, _id, _sysreserved, _sysconfigcreatetime, _sysconfigkey]
+[INFO ] 2017-11-07 10:19:05,900 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,900 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,908 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.admin_systemmenu
+[INFO ] 2017-11-07 10:19:05,909 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [create_time, menu_type, image_url, parent_id, menu_name, menu_url, _menuname, id, sort, is_show]
+[INFO ] 2017-11-07 10:19:05,909 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:19:05,909 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary, fk46b752fe98f90210]
+[INFO ] 2017-11-07 10:19:05,916 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.ftp_translog
+[INFO ] 2017-11-07 10:19:05,916 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [_address, _transtime, _logtype, _recordercode, _filesize, _filetype, _id, _siteno, _fileurl, _sitename, _filename]
+[INFO ] 2017-11-07 10:19:05,917 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,917 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[INFO ] 2017-11-07 10:19:05,931 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_doc
+[INFO ] 2017-11-07 10:19:05,931 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [doc_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:19:05,932 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkb7f68b14de0cd494, fkb7f68b149a7b931]
+[INFO ] 2017-11-07 10:19:05,933 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkb7f68b14de0cd494, fkb7f68b149a7b931, doc_id, primary]
+[INFO ] 2017-11-07 10:19:05,942 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_doc
+[INFO ] 2017-11-07 10:19:05,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:19:05,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkf6c920f431a748d8, fkf6c920f4de0cd494]
+[INFO ] 2017-11-07 10:19:05,943 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkf6c920f431a748d8, fkf6c920f4de0cd494, primary]
+[INFO ] 2017-11-07 10:19:05,951 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.t_case_evidence_source
+[INFO ] 2017-11-07 10:19:05,955 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [evidence_index, case_id, doc_id]
+[INFO ] 2017-11-07 10:19:05,956 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: [fkd13462dfde0cd494, fkd13462df31a748d8]
+[INFO ] 2017-11-07 10:19:05,956 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [fkd13462dfde0cd494, fkd13462df31a748d8, primary]
+[INFO ] 2017-11-07 10:19:05,976 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:65)
+table found: digitalevidence.temp_admin_rolemenubean
+[INFO ] 2017-11-07 10:19:05,977 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:66)
+columns: [name, checked, pid, id]
+[INFO ] 2017-11-07 10:19:05,977 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:68)
+foreign keys: []
+[INFO ] 2017-11-07 10:19:05,977 method:org.hibernate.tool.hbm2ddl.TableMetadata.<init>(TableMetadata.java:69)
+indexes: [primary]
+[ERROR] 2017-11-07 10:19:05,999 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-11-07 10:19:06,000 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[INFO ] 2017-11-07 10:19:06,000 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:217)
+schema update complete
+[INFO ] 2017-11-07 10:19:06,718 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-11-07 10:19:06,879 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-11-07 10:19:06,890 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-11-07 10:19:06,949 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-11-07 10:19:06,950 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-11-07 10:19:06,961 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-11-07 10:19:06,970 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-11-07 10:19:06,973 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'PC-2017033121411510021146887'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-11-07 10:19:06,975 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-11-07 10:19:06,975 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-11-07 10:19:06,981 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e3d7dd
+[INFO ] 2017-11-07 10:19:07,091 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@66383c29
+[INFO ] 2017-11-07 10:19:07,830 method:org.apache.ftpserver.impl.DefaultFtpServer.start(DefaultFtpServer.java:89)
+FTP server started
+[INFO ] 2017-11-07 10:19:20,349 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:159)
+CREATED
+[INFO ] 2017-11-07 10:19:20,356 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:159)
+OPENED
+[INFO ] 2017-11-07 10:19:20,368 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 220 Service ready for new user.
+
+[INFO ] 2017-11-07 10:19:22,059 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: USER jsdz
+[INFO ] 2017-11-07 10:19:22,063 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 331 User name okay, need password for jsdz.
+
+[INFO ] 2017-11-07 10:19:23,214 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: PASS *****
+[INFO ] 2017-11-07 10:19:23,220 method:org.apache.ftpserver.command.impl.PASS.execute(PASS.java:246)
+Login success - jsdz
+[INFO ] 2017-11-07 10:19:23,221 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 230 User logged in, proceed.
+
+[INFO ] 2017-11-07 10:19:25,689 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: TYPE I
+[INFO ] 2017-11-07 10:19:25,691 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 200 Command TYPE okay.
+
+[INFO ] 2017-11-07 10:19:44,834 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: PORT 127,0,0,1,242,61
+[INFO ] 2017-11-07 10:19:44,839 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 200 Command PORT okay.
+
+[INFO ] 2017-11-07 10:19:44,841 method:org.apache.ftpserver.listener.nio.FtpLoggingFilter.messageReceived(FtpLoggingFilter.java:84)
+RECEIVED: STOR 0000001_00002020170812122520_0001.avi
+[INFO ] 2017-11-07 10:19:45,019 method:org.apache.ftpserver.command.impl.STOR.execute(STOR.java:154)
+File uploaded /0000001_00002020170812122520_0001.avi
+[INFO ] 2017-11-07 10:19:45,020 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:86)
+***getAddress: /127.0.0.1
+[INFO ] 2017-11-07 10:19:45,021 method:com.jsdz.ftpserver.ftplet.UploadFtplet.onUploadEnd(UploadFtplet.java:87)
+***getHostString: 127.0.0.1
+[INFO ] 2017-11-07 10:19:50,282 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 150 File status okay; about to open data connection.
+
+[INFO ] 2017-11-07 10:19:50,283 method:org.apache.mina.filter.logging.LoggingFilter.log(LoggingFilter.java:141)
+SENT: 226 Transfer complete.
+

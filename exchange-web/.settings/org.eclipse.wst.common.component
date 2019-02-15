@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="exchange-web">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="digitalevidence-activemq-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/digitalevidence-activemq/digitalevidence-activemq">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="admin-security-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/admin-security/admin-security">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="exchange-web"/>
+        <property name="java-output-path" value="/exchange-web/target/classes"/>
+    </wb-module>
+</project-modules>

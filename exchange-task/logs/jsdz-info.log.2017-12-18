@@ -1,0 +1,1042 @@
+[INFO ] 2017-12-18 20:01:54,810 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-12-18 20:01:54,838 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:204)
+Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2017-12-18 20:01:54,841 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1936f0f5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6615435c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4909b8da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a03464]
+[INFO ] 2017-12-18 20:01:54,922 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-12-18 20:01:55,171 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-topo.xml]
+[INFO ] 2017-12-18 20:01:55,191 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-12-18 20:01:55,215 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@4678c730: startup date [Mon Dec 18 20:01:55 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:01:55,398 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-12-18 20:01:55,495 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-12-18 20:01:55,683 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-12-18 20:01:55,873 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-12-18 20:01:55,878 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-12-18 20:01:55,879 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-12-18 20:01:55,882 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-12-18 20:01:55,884 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-12-18 20:01:55,919 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-task/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-12-18 20:01:55,939 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-18 20:01:55,962 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-18 20:01:55,984 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-18 20:01:55,986 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-18 20:01:55,988 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-12-18 20:01:55,990 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-18 20:01:56,012 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9st9ttubro7u5k|28f2a10f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9st9ttubro7u5k|28f2a10f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.35)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.36)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjjzdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-18 20:01:56,445 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-12-18 20:01:56,455 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:01:56,456 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:01:56,458 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-18 20:01:56,459 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-18 20:01:56,459 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-18 20:01:56,459 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-18 20:01:56,460 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-18 20:01:56,460 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-18 20:01:56,460 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-18 20:01:56,461 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-12-18 20:01:56,461 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-18 20:01:56,461 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-18 20:01:56,462 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-12-18 20:01:56,462 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-18 20:01:56,462 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-18 20:01:56,462 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-18 20:01:56,463 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-18 20:01:56,463 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:01:56,464 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:01:56,465 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-18 20:01:56,465 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-18 20:01:56,465 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-18 20:01:56,465 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-18 20:01:56,466 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-18 20:01:56,466 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-18 20:01:56,467 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-18 20:01:56,470 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-18 20:01:56,470 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-18 20:01:56,471 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-18 20:01:56,471 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-18 20:01:56,471 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-18 20:01:56,471 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-18 20:01:56,484 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-18 20:01:56,488 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@62656be4
+[INFO ] 2017-12-18 20:01:56,488 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@6c7a164b
+[INFO ] 2017-12-18 20:01:56,489 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2bdd8394
+[INFO ] 2017-12-18 20:01:56,489 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@76b07f29
+[INFO ] 2017-12-18 20:01:56,489 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@76b07f29
+[INFO ] 2017-12-18 20:01:56,489 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@34129c78
+[INFO ] 2017-12-18 20:01:56,490 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@61710c6
+[INFO ] 2017-12-18 20:01:56,490 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@61710c6
+[INFO ] 2017-12-18 20:01:56,490 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4a07d605
+[INFO ] 2017-12-18 20:01:56,500 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-18 20:01:56,593 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-12-18 20:01:56,634 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-12-18 20:01:56,637 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-12-18 20:01:56,650 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-12-18 20:01:56,650 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-12-18 20:01:56,651 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-12-18 20:01:56,653 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-12-18 20:01:56,654 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'jz04-PC1513598516636'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-12-18 20:01:56,654 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-12-18 20:01:56,654 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-12-18 20:01:56,656 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@ccb4b1b
+[INFO ] 2017-12-18 20:01:56,668 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@62e20a76
+[WARN ] 2017-12-18 20:01:56,811 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataTopoSer' defined in class path resource [testApplicationContext-topo.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:481)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:512)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 39 more
+Caused by: java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:286)
+	at org.springframework.beans.propertyeditors.ClassEditor.setAsText(ClassEditor.java:63)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:450)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:423)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:195)
+	at org.springframework.beans.TypeConverterDelegate.convertToTypedMap(TypeConverterDelegate.java:643)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:222)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:461)
+	... 45 more
+Caused by: java.lang.ClassNotFoundException: com.jsdz.exchange.task.topo.chain.ChainDataTopology
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:283)
+	... 52 more
+[INFO ] 2017-12-18 20:01:56,819 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:765)
+Shutting down Quartz Scheduler
+[INFO ] 2017-12-18 20:01:56,820 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694)
+Scheduler scheduler_$_jz04-PC1513598516636 shutting down.
+[INFO ] 2017-12-18 20:01:56,820 method:org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613)
+Scheduler scheduler_$_jz04-PC1513598516636 paused.
+[INFO ] 2017-12-18 20:01:56,820 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771)
+Scheduler scheduler_$_jz04-PC1513598516636 shutdown complete.
+[INFO ] 2017-12-18 20:01:56,821 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-18 20:01:56,821 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing
+[ERROR] 2017-12-18 20:01:56,825 method:org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:215)
+Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1936f0f5] to prepare test instance [com.jsdz.test.exchange.task.ChainDataTopologyTest@402f32ff]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataTopoSer' defined in class path resource [testApplicationContext-topo.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:481)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:512)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 39 more
+Caused by: java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.task.topo.chain.ChainDataTopology]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:286)
+	at org.springframework.beans.propertyeditors.ClassEditor.setAsText(ClassEditor.java:63)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:450)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:423)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:195)
+	at org.springframework.beans.TypeConverterDelegate.convertToTypedMap(TypeConverterDelegate.java:643)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:222)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:461)
+	... 45 more
+Caused by: java.lang.ClassNotFoundException: com.jsdz.exchange.task.topo.chain.ChainDataTopology
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:283)
+	... 52 more
+[INFO ] 2017-12-18 20:02:46,022 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-12-18 20:02:46,038 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:204)
+Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2017-12-18 20:02:46,041 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1936f0f5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6615435c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4909b8da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a03464]
+[INFO ] 2017-12-18 20:02:46,122 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-12-18 20:02:46,355 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-topo.xml]
+[INFO ] 2017-12-18 20:02:46,377 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-12-18 20:02:46,395 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@4678c730: startup date [Mon Dec 18 20:02:46 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:02:46,525 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-12-18 20:02:46,633 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-12-18 20:02:46,831 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-12-18 20:02:47,011 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-12-18 20:02:47,014 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-12-18 20:02:47,016 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-12-18 20:02:47,018 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-12-18 20:02:47,021 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-12-18 20:02:47,056 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-task/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-12-18 20:02:47,075 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-18 20:02:47,097 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-18 20:02:47,119 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-18 20:02:47,120 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-18 20:02:47,123 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-12-18 20:02:47,124 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-18 20:02:47,145 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9st9uxb51cn16ex|28f2a10f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9st9uxb51cn16ex|28f2a10f, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.35)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.36)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjjzdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-18 20:02:47,580 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-12-18 20:02:47,590 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:02:47,590 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:02:47,593 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-18 20:02:47,594 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-18 20:02:47,595 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-18 20:02:47,595 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-18 20:02:47,595 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-18 20:02:47,595 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-18 20:02:47,596 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-18 20:02:47,596 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-12-18 20:02:47,596 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-18 20:02:47,597 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-18 20:02:47,597 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-12-18 20:02:47,597 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-18 20:02:47,598 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-18 20:02:47,598 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-18 20:02:47,598 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-18 20:02:47,598 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:02:47,599 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:02:47,600 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-18 20:02:47,600 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-18 20:02:47,600 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-18 20:02:47,600 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-18 20:02:47,601 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-18 20:02:47,601 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-18 20:02:47,602 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-18 20:02:47,604 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-18 20:02:47,605 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-18 20:02:47,605 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-18 20:02:47,605 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-18 20:02:47,605 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-18 20:02:47,606 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-18 20:02:47,617 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-18 20:02:47,623 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@62656be4
+[INFO ] 2017-12-18 20:02:47,623 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@6c7a164b
+[INFO ] 2017-12-18 20:02:47,624 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2bdd8394
+[INFO ] 2017-12-18 20:02:47,624 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@76b07f29
+[INFO ] 2017-12-18 20:02:47,624 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@76b07f29
+[INFO ] 2017-12-18 20:02:47,624 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@34129c78
+[INFO ] 2017-12-18 20:02:47,624 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@61710c6
+[INFO ] 2017-12-18 20:02:47,625 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@61710c6
+[INFO ] 2017-12-18 20:02:47,625 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@4a07d605
+[INFO ] 2017-12-18 20:02:47,634 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-18 20:02:47,711 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-12-18 20:02:47,750 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-12-18 20:02:47,752 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-12-18 20:02:47,764 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-12-18 20:02:47,765 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-12-18 20:02:47,766 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-12-18 20:02:47,768 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-12-18 20:02:47,768 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'jz04-PC1513598567751'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-12-18 20:02:47,769 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-12-18 20:02:47,769 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-12-18 20:02:47,770 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4c2cc639
+[INFO ] 2017-12-18 20:02:47,779 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@56f0cc85
+[WARN ] 2017-12-18 20:02:47,909 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataTopoSer' defined in class path resource [testApplicationContext-topo.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:481)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:512)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 39 more
+Caused by: java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:286)
+	at org.springframework.beans.propertyeditors.ClassEditor.setAsText(ClassEditor.java:63)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:450)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:423)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:195)
+	at org.springframework.beans.TypeConverterDelegate.convertToTypedMap(TypeConverterDelegate.java:643)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:222)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:461)
+	... 45 more
+Caused by: java.lang.ClassNotFoundException: com.jsdz.exchange.topo.chain.ChainEntityTopology
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:283)
+	... 52 more
+[INFO ] 2017-12-18 20:02:47,918 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:765)
+Shutting down Quartz Scheduler
+[INFO ] 2017-12-18 20:02:47,919 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694)
+Scheduler scheduler_$_jz04-PC1513598567751 shutting down.
+[INFO ] 2017-12-18 20:02:47,919 method:org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613)
+Scheduler scheduler_$_jz04-PC1513598567751 paused.
+[INFO ] 2017-12-18 20:02:47,919 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771)
+Scheduler scheduler_$_jz04-PC1513598567751 shutdown complete.
+[INFO ] 2017-12-18 20:02:47,920 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-18 20:02:47,920 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing
+[ERROR] 2017-12-18 20:02:47,922 method:org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:215)
+Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1936f0f5] to prepare test instance [com.jsdz.test.exchange.task.ChainDataTopologyTest@402f32ff]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataTopoSer' defined in class path resource [testApplicationContext-topo.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.util.LinkedHashMap' to required type 'java.util.Map' for property 'typeAlias'; nested exception is java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:481)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:512)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	... 39 more
+Caused by: java.lang.IllegalArgumentException: Cannot find class [com.jsdz.exchange.topo.chain.ChainEntityTopology]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:286)
+	at org.springframework.beans.propertyeditors.ClassEditor.setAsText(ClassEditor.java:63)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:450)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:423)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:195)
+	at org.springframework.beans.TypeConverterDelegate.convertToTypedMap(TypeConverterDelegate.java:643)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:222)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:461)
+	... 45 more
+Caused by: java.lang.ClassNotFoundException: com.jsdz.exchange.topo.chain.ChainEntityTopology
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:283)
+	... 52 more
+[INFO ] 2017-12-18 20:08:16,479 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-12-18 20:08:16,494 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:204)
+Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2017-12-18 20:08:16,496 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@56a6d5a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18ce0030, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4445629, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45b9a632]
+[INFO ] 2017-12-18 20:08:16,603 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-12-18 20:08:16,895 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-topo.xml]
+[INFO ] 2017-12-18 20:08:16,915 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-12-18 20:08:16,932 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@6a28ffa4: startup date [Mon Dec 18 20:08:16 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:08:17,121 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-12-18 20:08:17,240 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-12-18 20:08:17,419 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-12-18 20:08:17,626 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-12-18 20:08:17,631 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-12-18 20:08:17,633 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-12-18 20:08:17,635 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-12-18 20:08:17,638 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-12-18 20:08:17,688 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-task/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-12-18 20:08:17,711 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-18 20:08:17,729 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-18 20:08:17,756 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-18 20:08:17,758 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-18 20:08:17,762 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-12-18 20:08:17,764 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-18 20:08:17,793 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9sta20e7zechec|3e5499cc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9sta20e7zechec|3e5499cc, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.35)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.36)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjjzdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-18 20:08:18,262 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-12-18 20:08:18,275 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:08:18,275 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:08:18,278 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-18 20:08:18,279 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-18 20:08:18,280 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-18 20:08:18,280 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-18 20:08:18,280 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-18 20:08:18,280 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-18 20:08:18,281 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-18 20:08:18,281 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-12-18 20:08:18,282 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-18 20:08:18,282 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-18 20:08:18,283 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-12-18 20:08:18,283 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-18 20:08:18,283 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-18 20:08:18,284 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-18 20:08:18,284 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-18 20:08:18,284 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:08:18,286 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:08:18,287 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-18 20:08:18,288 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-18 20:08:18,288 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-18 20:08:18,288 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-18 20:08:18,288 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-18 20:08:18,290 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-18 20:08:18,291 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-18 20:08:18,294 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-18 20:08:18,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-18 20:08:18,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-18 20:08:18,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-18 20:08:18,295 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-18 20:08:18,296 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-18 20:08:18,310 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-18 20:08:18,315 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7d61eccf
+[INFO ] 2017-12-18 20:08:18,315 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1df98368
+[INFO ] 2017-12-18 20:08:18,315 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@13006998
+[INFO ] 2017-12-18 20:08:18,316 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@4b4dd216
+[INFO ] 2017-12-18 20:08:18,316 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@4b4dd216
+[INFO ] 2017-12-18 20:08:18,316 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@34abdee4
+[INFO ] 2017-12-18 20:08:18,316 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@34abdee4
+[INFO ] 2017-12-18 20:08:18,317 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@4d411036
+[INFO ] 2017-12-18 20:08:18,317 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@35293c05
+[INFO ] 2017-12-18 20:08:18,326 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-18 20:08:18,412 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-12-18 20:08:18,463 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-12-18 20:08:18,467 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-12-18 20:08:18,485 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-12-18 20:08:18,485 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-12-18 20:08:18,487 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-12-18 20:08:18,489 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-12-18 20:08:18,490 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'jz04-PC1513598898466'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-12-18 20:08:18,490 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-12-18 20:08:18,490 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-12-18 20:08:18,492 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@250b236d
+[INFO ] 2017-12-18 20:08:18,506 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@75b3673
+[INFO ] 2017-12-18 20:08:18,784 method:org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:862)
+Closing org.springframework.context.support.GenericApplicationContext@6a28ffa4: startup date [Mon Dec 18 20:08:16 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:08:18,787 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:356)
+Stopping beans in phase 2147483647
+[INFO ] 2017-12-18 20:08:18,794 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:765)
+Shutting down Quartz Scheduler
+[INFO ] 2017-12-18 20:08:18,794 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694)
+Scheduler scheduler_$_jz04-PC1513598898466 shutting down.
+[INFO ] 2017-12-18 20:08:18,794 method:org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613)
+Scheduler scheduler_$_jz04-PC1513598898466 paused.
+[INFO ] 2017-12-18 20:08:18,795 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771)
+Scheduler scheduler_$_jz04-PC1513598898466 shutdown complete.
+[INFO ] 2017-12-18 20:08:18,795 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-18 20:08:18,796 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing
+[INFO ] 2017-12-18 20:10:11,703 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-12-18 20:10:11,711 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:204)
+Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2017-12-18 20:10:11,720 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15975490, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b143ee9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1936f0f5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6615435c]
+[INFO ] 2017-12-18 20:10:11,807 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-12-18 20:10:12,055 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-topo.xml]
+[INFO ] 2017-12-18 20:10:12,074 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-12-18 20:10:12,090 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@39aeed2f: startup date [Mon Dec 18 20:10:12 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:10:12,241 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-12-18 20:10:12,361 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-12-18 20:10:12,547 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-12-18 20:10:12,744 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-12-18 20:10:12,748 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-12-18 20:10:12,749 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-12-18 20:10:12,752 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-12-18 20:10:12,754 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-12-18 20:10:12,797 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-task/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-12-18 20:10:12,817 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-18 20:10:12,832 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-18 20:10:12,855 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-18 20:10:12,857 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-18 20:10:12,859 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-12-18 20:10:12,861 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-18 20:10:12,883 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9sta4h86ovcicw|156b88f5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9sta4h86ovcicw|156b88f5, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.35)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.36)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjjzdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-18 20:10:13,313 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO ] 2017-12-18 20:10:13,323 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:10:13,324 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-18 20:10:13,326 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-18 20:10:13,327 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-18 20:10:13,327 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-18 20:10:13,328 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-18 20:10:13,328 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-18 20:10:13,328 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-18 20:10:13,329 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-18 20:10:13,329 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): enabled
+[INFO ] 2017-12-18 20:10:13,329 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-18 20:10:13,330 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-18 20:10:13,330 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:238)
+Maximum outer join fetch depth: 2
+[INFO ] 2017-12-18 20:10:13,331 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-18 20:10:13,331 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-18 20:10:13,331 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-18 20:10:13,331 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-18 20:10:13,331 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:10:13,333 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-18 20:10:13,333 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-18 20:10:13,334 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-18 20:10:13,334 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-18 20:10:13,334 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-18 20:10:13,335 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-18 20:10:13,335 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-18 20:10:13,336 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-18 20:10:13,339 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-18 20:10:13,339 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-18 20:10:13,340 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-18 20:10:13,340 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-18 20:10:13,340 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-18 20:10:13,340 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-18 20:10:13,354 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-18 20:10:13,358 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@50029372
+[INFO ] 2017-12-18 20:10:13,359 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@50029372
+[INFO ] 2017-12-18 20:10:13,359 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@6cc4cdb9
+[INFO ] 2017-12-18 20:10:13,359 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1a5b6f42
+[INFO ] 2017-12-18 20:10:13,360 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@79defdc
+[INFO ] 2017-12-18 20:10:13,360 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@7fd7a283
+[INFO ] 2017-12-18 20:10:13,360 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7fd7a283
+[INFO ] 2017-12-18 20:10:13,360 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@16612a51
+[INFO ] 2017-12-18 20:10:13,361 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@238d68ff
+[INFO ] 2017-12-18 20:10:13,370 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-18 20:10:13,448 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-12-18 20:10:13,487 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-12-18 20:10:13,489 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-12-18 20:10:13,500 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-12-18 20:10:13,501 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-12-18 20:10:13,502 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-12-18 20:10:13,504 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-12-18 20:10:13,505 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'jz04-PC1513599013488'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-12-18 20:10:13,505 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-12-18 20:10:13,505 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-12-18 20:10:13,506 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@708400f6
+[INFO ] 2017-12-18 20:10:13,516 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@6e35bc3d
+[INFO ] 2017-12-18 20:10:13,763 method:org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:862)
+Closing org.springframework.context.support.GenericApplicationContext@39aeed2f: startup date [Mon Dec 18 20:10:12 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-18 20:10:13,764 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:356)
+Stopping beans in phase 2147483647
+[INFO ] 2017-12-18 20:10:13,771 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:765)
+Shutting down Quartz Scheduler
+[INFO ] 2017-12-18 20:10:13,772 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694)
+Scheduler scheduler_$_jz04-PC1513599013488 shutting down.
+[INFO ] 2017-12-18 20:10:13,772 method:org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613)
+Scheduler scheduler_$_jz04-PC1513599013488 paused.
+[INFO ] 2017-12-18 20:10:13,772 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771)
+Scheduler scheduler_$_jz04-PC1513599013488 shutdown complete.
+[INFO ] 2017-12-18 20:10:13,773 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-18 20:10:13,773 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing

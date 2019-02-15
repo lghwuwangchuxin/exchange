@@ -1,0 +1,16 @@
+[ERROR] 2017-09-12 13:46:28,712 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-12 13:46:28,715 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-12 13:53:44,681 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-12 13:53:44,682 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-12 13:59:05,881 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-12 13:59:05,882 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1
+[ERROR] 2017-09-12 13:59:57,124 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-12 13:59:57,124 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="true">
+
+	<class name="com.jsdz.exchange.marker.Marker" table="T_EXCHANGE_MARKER">
+
+		<!-- 主键  -->
+	    <composite-id name="id">
+	      <!-- 这里是主键关联属性 -->
+	      <key-property name="owner" column="owner"/>
+	      <key-property name="tableName" column="tablename" />
+	    </composite-id> 
+		
+		<component name="markerField" class="com.jsdz.exchange.marker.MarkerField">
+            <property name="name" type="string">
+                <column name="marker" />
+            </property>
+            <property name="dvalue" type="timestamp">
+                <column name="dvalue"/>
+            </property>
+            <property name="nvalue" type="long">
+                <column name="nvalue"/>
+            </property>
+            <property name="svalue" type="string">
+                <column name="svalue"/>
+            </property>
+            <property name="type" column="MARKER_TYPE">
+				<type name="org.hibernate.type.EnumType">
+	            		<param name="enumClass"> 
+	            			com.jsdz.exchange.marker.MarkerType
+	            		</param>
+	            	</type>
+			</property>
+        </component>
+	    
+	    <!-- 批量规模 -->
+		<property name="batchSize" column="batchsize"/>
+		
+		<property name="maxN" column="maxnvalue"></property>
+		
+		<property name="maxD" column="maxdvalue"></property>
+		
+		<property name="maxS" column="maxsvalue"></property>
+	
+	</class>
+	
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.jsdz:jave:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jsdz/jave/unknown/jave-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jsdz/jave/unknown/jave-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/jsdz/jave/unknown/jave-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

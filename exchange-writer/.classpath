@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/exchange/exchange-topo/target/classes" sourcepath="/exchange/exchange-topo/src"/>
+	<classpathentry kind="lib" path="/exchange/exchange-model/target/classes" sourcepath="/exchange/exchange-model/src"/>
+	<classpathentry kind="lib" path="/admin/admin-org/target/classes" sourcepath="/admin/admin-org/src"/>
+	<classpathentry kind="lib" path="/admin/admin-security/target/classes"/>
+	<classpathentry kind="lib" path="/digitalevidence/digitalevidence-document/target/classes"/>
+	<classpathentry kind="lib" path="/digitalevidence/digitalevidence-site/target/classes" sourcepath="/digitalevidence/digitalevidence-site/src"/>
+	<classpathentry kind="lib" path="/exchange/exchange-common/target/classes"/>
+	<classpathentry kind="lib" path="/exchange/exchange-check/target/classes"/>
+	<classpathentry kind="lib" path="/exchange-load/target/classes" sourcepath="/exchange-load/src"/>
+	<classpathentry kind="lib" path="/digitalevidence-alarm/target/classes"/>
+	<classpathentry kind="lib" path="/exchange/exchange-marker/target/classes"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

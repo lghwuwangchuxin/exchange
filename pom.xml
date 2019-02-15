@@ -1,0 +1,221 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jsdz</groupId>
+	<artifactId>exchange</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>exchange-common</module>
+		<module>exchange-model</module>
+		<module>exchange-load</module>
+		<module>exchange-task</module>
+		<module>exchange-marker</module>
+		<module>exchange-check</module>
+		<module>exchange-topo</module>
+		<module>exchange-writer</module>
+		<module>exchange-web</module>
+	</modules>
+
+	<url>http://maven.apache.org</url>
+	 <!--<repositories>
+    <repository>  
+        <snapshots>  
+            <enabled>true</enabled>  
+        </snapshots>  
+        <id>public</id>  
+        <name>Public Repositories</name>  
+        <url>http://192.168.1.99:8081/repository/maven-public/</url>  
+   </repository>  
+ </repositories>  
+    <pluginRepositories>  
+        <pluginRepository>  
+            <id>public</id>  
+            <name>Public Repositories</name>  
+            <url>http://192.168.1.99:8081/repository/maven-public/</url>  
+        </pluginRepository>  
+    </pluginRepositories> -->
+
+	<!-- 私库 -->
+	<!--<distributionManagement>
+	  <snapshotRepository>
+	    <id>snapshots</id>
+	    <url>http://192.168.1.99:8081/repository/maven-snapshots/</url>
+	  </snapshotRepository>
+	  <repository>
+	    <id>releases</id>
+	    <url>http://192.168.1.99:8081/repository/maven-releases/</url>
+	  </repository>
+	</distributionManagement>-->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<spring.version>4.1.5.RELEASE</spring.version>
+		<tika.version>1.10</tika.version>
+		<ruleengine.version>1.0-SNAPSHOT</ruleengine.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-orm</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!-- SPRING basic end -->
+			<!-- AOP -->
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjrt</artifactId>
+				<version>1.7.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>1.7.1</version>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>2.2.2</version>
+			</dependency>
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm</artifactId>
+				<version>3.3.1</version>
+			</dependency>
+			<!-- -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.4</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.7.0</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.5</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-digester3</artifactId>
+				<version>3.2</version>
+			</dependency>
+
+			<!-- log -->
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>1.6.4</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.7.1</version>
+			</dependency>
+			<!-- -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>3.6.10.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.javassist</groupId>
+				<artifactId>javassist</artifactId>
+				<version>3.20.0-GA</version>
+			</dependency>
+			<!-- jsdz组件 -->
+			<dependency>
+				<groupId>com.jsdz</groupId>
+				<artifactId>scheduler-schedulerengine</artifactId>
+				<version>1.1.2.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jsdz</groupId>
+				<artifactId>utils</artifactId>
+				<version>1.0.1.RELEASE</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.jsdz</groupId>
+				<artifactId>serializer</artifactId>
+				<version>1.0.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jsdz</groupId>
+				<artifactId>core</artifactId>
+				<version>1.0.1.RELEASE</version>
+			</dependency>
+					<dependency>
+			<groupId>com.jsdz</groupId>
+			<artifactId>commons-reportquery</artifactId>
+			<version>1.1.2.2.RELEASE</version>
+		</dependency>
+				<dependency>
+			<groupId>com.jsdz</groupId>
+			<artifactId>messageengine</artifactId>
+			<version>1.0.RELEASE</version>
+		</dependency>
+			<!-- db driver -->
+			<dependency>
+				<groupId>com.oracle</groupId>
+				<artifactId>ojdbc</artifactId>
+				<version>6</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<version>1.0.RELEASE</version>
+</project>

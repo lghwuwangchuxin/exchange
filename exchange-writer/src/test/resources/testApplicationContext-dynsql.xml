@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+			
+	<!-- 动态sql -->
+	<!-- 配置序列化器 -->	
+	<bean id="dynsqlSer" 
+			class="com.jsdz.serializer.xstream.XMLSerializerXStreamImpl">  
+		<!-- 映射别名配置 -->
+		<property name="typeAlias">
+        	<map>  
+            	<entry key ="path">
+                	<value>com.jsdz.reportquery.dynsql.fork.Path</value>
+                </entry>     
+                <entry key ="sqlPiece">
+                	<value>com.jsdz.reportquery.dynsql.SqlPiece</value>
+                </entry>     
+                <entry key ="sqlTemplate">
+                	<value>com.jsdz.reportquery.dynsql.SqlTemplate</value>
+                </entry>     
+                <entry key ="sqlTemplates">
+                	<value>java.util.Map</value>
+                </entry>          
+ 				<entry key ="IsNotNull">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.IsNotNull</value>
+                </entry> 
+                <entry key ="IsNull">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.IsNull</value>
+                </entry>
+                <entry key ="IsTree">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.tree.IsTree</value>
+                </entry>
+                <entry key ="IsNotTree">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.tree.IsNotTree</value>
+                </entry>
+                <entry key ="OrderByASC">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.OrderByASC</value>
+                </entry>
+                <entry key ="OrderByDESC">
+                	<value>com.jsdz.reportquery.dynsql.fork.support.OrderByDESC</value>
+                </entry>
+            </map>            
+   		</property>
+	</bean>	
+	
+		<!--  -->
+	<bean id="rqDao" 
+			class="com.jsdz.reportquery.impl.ReportQueryHibernateImpl">  		 
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 动态sql -->
+	<bean id="rqSynDao" 
+			class="com.jsdz.reportquery.impl.ReportQueryDynSqlHibernateImpl">  		 
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+		
+</beans>

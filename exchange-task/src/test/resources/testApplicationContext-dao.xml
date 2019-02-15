@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+		
+	<!-- 平台Dao -->	
+	<bean id="platformDao" 
+			class="com.jsdz.digitalevidence.site.dao.impl.PlatformDaoImpl">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+		
+	<!-- 数据加载Dao -->	
+	<bean id="exLoadDao" 
+			class="com.jsdz.exchange.load.dao.ExLoadDaoImpl">  
+		<property name="sessionFactory" ref="sessionFactory_yh0102"></property>
+	</bean>	
+	
+	<!-- 标记Dao -->
+	<bean id="mark" 
+			class="com.jsdz.exchange.marker.impl.MarkerHibernateImpl">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 组织处理器 -->
+	<bean id="orgExWriterHandler" 
+			class="com.jsdz.exchange.writer.handler.OrgExWriterHandler">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 组织处理器 -->
+	<bean id="policeExWriterHandler" 
+			class="com.jsdz.exchange.writer.handler.PoliceExWriterHandler">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 记录仪处理器 -->
+	<bean id="recorderExWriterHandler" 
+			class="com.jsdz.exchange.writer.handler.RecorderExWriterHandler">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 文档处理器 -->
+	<bean id="documentExWriterHandler" 
+			class="com.jsdz.exchange.writer.handler.DocumentExWriterHandler">  
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	
+	
+</beans>

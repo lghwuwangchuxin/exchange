@@ -1,0 +1,483 @@
+[INFO ] 2017-12-21 16:45:14,385 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:256)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2017-12-21 16:45:14,410 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:204)
+Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2017-12-21 16:45:14,414 method:org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:182)
+Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f112965, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a04f701, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e91d63f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d4342c2]
+[INFO ] 2017-12-21 16:45:14,542 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-common.xml]
+[INFO ] 2017-12-21 16:45:14,948 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-dynsql.xml]
+[INFO ] 2017-12-21 16:45:14,971 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-documenttype.xml]
+[INFO ] 2017-12-21 16:45:14,995 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-scheduler.xml]
+[INFO ] 2017-12-21 16:45:15,012 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [testApplicationContext-dao.xml]
+[INFO ] 2017-12-21 16:45:15,036 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.GenericApplicationContext@67a20f67: startup date [Thu Dec 21 16:45:15 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-21 16:45:15,231 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [test-config.properties]
+[INFO ] 2017-12-21 16:45:15,385 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+MLog clients using slf4j logging.
+[INFO ] 2017-12-21 16:45:15,575 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO ] 2017-12-21 16:45:15,812 method:org.hibernate.annotations.common.Version.<clinit>(Version.java:37)
+Hibernate Commons Annotations 3.2.0.Final
+[INFO ] 2017-12-21 16:45:15,818 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:603)
+Hibernate 3.6.10.Final
+[INFO ] 2017-12-21 16:45:15,820 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:636)
+hibernate.properties not found
+[INFO ] 2017-12-21 16:45:15,823 method:org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:814)
+Bytecode provider name : javassist
+[INFO ] 2017-12-21 16:45:15,827 method:org.hibernate.cfg.Environment.<clinit>(Environment.java:695)
+using JDK 1.4 java.sql.Timestamp handling
+[INFO ] 2017-12-21 16:45:15,878 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-load/target/test-classes/test-hibernate.cfg.xml
+[WARN ] 2017-12-21 16:45:15,904 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-21 16:45:15,923 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/exchange/marker/impl/hbm/Marker.hbm.xml
+[WARN ] 2017-12-21 16:45:15,940 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-21 16:45:15,957 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/admin/security/dao/security.hbm.xml
+[INFO ] 2017-12-21 16:45:15,993 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/site/dao/site.hbm.xml
+[INFO ] 2017-12-21 16:45:16,007 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/document/dao/Document.hbm.xml
+[INFO ] 2017-12-21 16:45:16,021 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/alarm/alarm110/model/Case.hbm.xml
+[INFO ] 2017-12-21 16:45:16,039 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/digitalevidence/alarm/alarm.hbm.xml
+[INFO ] 2017-12-21 16:45:16,059 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/scheduler/repo/dao/hibernate/hbm/Job.hbm.xml
+[INFO ] 2017-12-21 16:45:16,070 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-21 16:45:16,112 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.marker.Marker -> T_EXCHANGE_MARKER
+[INFO ] 2017-12-21 16:45:16,129 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Region -> admin_region
+[INFO ] 2017-12-21 16:45:16,134 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.RegionType -> admin_regiontype
+[INFO ] 2017-12-21 16:45:16,135 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Department -> admin_department
+[INFO ] 2017-12-21 16:45:16,136 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Position -> admin_position
+[INFO ] 2017-12-21 16:45:16,136 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.model.Organization -> admin_organization
+[INFO ] 2017-12-21 16:45:16,138 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Employees -> admin_employees
+[INFO ] 2017-12-21 16:45:16,139 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Operator -> admin_operators
+[INFO ] 2017-12-21 16:45:16,141 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Role -> admin_roles
+[INFO ] 2017-12-21 16:45:16,142 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperatorRole -> admin_operatorroles
+[INFO ] 2017-12-21 16:45:16,143 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.Action -> admin_actions
+[INFO ] 2017-12-21 16:45:16,144 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleAction -> admin_roleactions
+[INFO ] 2017-12-21 16:45:16,144 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.OperateLog -> admin_operateLogs
+[INFO ] 2017-12-21 16:45:16,146 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SysConfig -> admin_sysconfig
+[INFO ] 2017-12-21 16:45:16,147 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RsaKey -> admin_rsakey
+[INFO ] 2017-12-21 16:45:16,148 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.OrganizationBean -> admin_organizationbean_bean
+[INFO ] 2017-12-21 16:45:16,150 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.org.bean.RegionBean -> admin_regionBean_bean
+[INFO ] 2017-12-21 16:45:16,151 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.SystemMenu -> admin_systemmenu
+[INFO ] 2017-12-21 16:45:16,152 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.RoleMenu -> admin_role_menu
+[INFO ] 2017-12-21 16:45:16,153 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.SystemMenuBean -> SystemMenuBean
+[INFO ] 2017-12-21 16:45:16,155 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.RoleMenuBean -> RoleMenuBean
+[INFO ] 2017-12-21 16:45:16,156 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.RoleForViewBean -> RoleForViewBean
+[INFO ] 2017-12-21 16:45:16,157 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.DataDictionary -> admin_dictionary
+[INFO ] 2017-12-21 16:45:16,157 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.DictionaryValues -> admin_dictionary_value
+[INFO ] 2017-12-21 16:45:16,158 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.model.EmployeesImport -> admin_employees_import
+[INFO ] 2017-12-21 16:45:16,159 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.ImportCheckValueBean -> ImportCheckValueBean
+[INFO ] 2017-12-21 16:45:16,160 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.admin.security.bean.EmployeesImportBean -> EmployeesImportBean
+[INFO ] 2017-12-21 16:45:16,161 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Platform -> T_PLATFORM
+[INFO ] 2017-12-21 16:45:16,165 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Site -> T_site
+[INFO ] 2017-12-21 16:45:16,170 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.Recorder -> T_Recorder
+[INFO ] 2017-12-21 16:45:16,172 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.RecorderEmployees -> T_RecorderEmployees
+[INFO ] 2017-12-21 16:45:16,173 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.TransLog -> ftp_translog
+[INFO ] 2017-12-21 16:45:16,174 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteLost -> T_SiteLost
+[INFO ] 2017-12-21 16:45:16,175 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.model.SiteActivite -> T_SiteActivite
+[INFO ] 2017-12-21 16:45:16,176 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.site.bean.SiteStatisticalDTO -> T_SiteStatisticaldto
+[INFO ] 2017-12-21 16:45:16,177 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.Document -> T_Doc
+[INFO ] 2017-12-21 16:45:16,187 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.RecorderLog -> T_Doc
+[INFO ] 2017-12-21 16:45:16,187 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Video -> T_Doc
+[INFO ] 2017-12-21 16:45:16,188 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.FLV -> T_Doc
+[INFO ] 2017-12-21 16:45:16,189 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.MP4 -> T_Doc
+[INFO ] 2017-12-21 16:45:16,189 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.AVI -> T_Doc
+[INFO ] 2017-12-21 16:45:16,189 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Audio -> T_Doc
+[INFO ] 2017-12-21 16:45:16,190 method:org.hibernate.cfg.HbmBinder.bindSubclass(HbmBinder.java:886)
+Mapping subclass: com.jsdz.digitalevidence.document.model.Picture -> T_Doc
+[INFO ] 2017-12-21 16:45:16,191 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.model.EnforceType -> T_Enforce_Type
+[INFO ] 2017-12-21 16:45:16,191 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.document.bean.DocumentBean -> DocumentBean
+[INFO ] 2017-12-21 16:45:16,193 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.alarm110.model.Case -> T_CASE
+[INFO ] 2017-12-21 16:45:16,206 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.alarm.alarm110.model.Case.docs -> t_case_doc
+[INFO ] 2017-12-21 16:45:16,208 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.alarm110.model.Evidence -> T_CASE_EVIDENCE
+[INFO ] 2017-12-21 16:45:16,208 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.alarm.alarm110.model.Evidence.origins -> t_case_evidence_source
+[INFO ] 2017-12-21 16:45:16,208 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.digitalevidence.alarm.alarm110.model.Evidence.docs -> t_case_evidence_doc
+[INFO ] 2017-12-21 16:45:16,209 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.alarm110.model.AlarmInfo -> T_alarm_info
+[INFO ] 2017-12-21 16:45:16,210 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.alarm110.model.AlarmRelation -> T_alarm_relation
+[INFO ] 2017-12-21 16:45:16,211 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.jingjiang.model.JingJiangDoc -> T_jingjiang_doc
+[INFO ] 2017-12-21 16:45:16,212 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.gueiyang.model.RecoderView -> T_gueiyang_recoderview
+[INFO ] 2017-12-21 16:45:16,213 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.common.model.DocumentInfo -> t_alarm_documentInfo
+[INFO ] 2017-12-21 16:45:16,214 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.digitalevidence.alarm.common.bean.DocumentInfoBean -> DocumentInfoBean
+[INFO ] 2017-12-21 16:45:16,217 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.scheduler.repo.JobCategory -> t_scheduler_job_cate
+[INFO ] 2017-12-21 16:45:16,218 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.scheduler.repo.JobBean -> t_scheduler_job
+[INFO ] 2017-12-21 16:45:16,220 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.scheduler.repo.JobBean.params -> t_scheduler_job_param
+[INFO ] 2017-12-21 16:45:16,221 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.scheduler.repo.TaskBean -> t_scheduler_task
+[INFO ] 2017-12-21 16:45:16,222 method:org.hibernate.cfg.HbmBinder.bindCollection(HbmBinder.java:1522)
+Mapping collection: com.jsdz.scheduler.repo.TaskBean.params -> t_scheduler_task_param
+[INFO ] 2017-12-21 16:45:16,223 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.scheduler.repo.FiredJobBean -> t_scheduler_fired_job
+[INFO ] 2017-12-21 16:45:16,228 method:org.hibernate.cfg.HbmBinder.bindCollectionSecondPass(HbmBinder.java:2508)
+Mapping collection: com.jsdz.digitalevidence.site.model.Platform.orgs -> admin_organization
+[INFO ] 2017-12-21 16:45:16,229 method:org.hibernate.cfg.HbmBinder.bindCollectionSecondPass(HbmBinder.java:2508)
+Mapping collection: com.jsdz.scheduler.repo.JobCategory.subCates -> t_scheduler_job_cate
+[INFO ] 2017-12-21 16:45:16,231 method:org.hibernate.cfg.HbmBinder.bindCollectionSecondPass(HbmBinder.java:2508)
+Mapping collection: com.jsdz.scheduler.repo.JobCategory.items -> t_scheduler_job
+[INFO ] 2017-12-21 16:45:16,232 method:org.hibernate.cfg.HbmBinder.bindCollectionSecondPass(HbmBinder.java:2508)
+Mapping collection: com.jsdz.scheduler.repo.JobBean.tasks -> t_scheduler_task
+[INFO ] 2017-12-21 16:45:16,236 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-21 16:45:16,238 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-21 16:45:16,243 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[WARN ] 2017-12-21 16:45:16,275 method:org.hibernate.mapping.RootClass.checkCompositeIdentifier(RootClass.java:253)
+composite-id class does not override equals(): com.jsdz.exchange.marker.MarkerId
+[WARN ] 2017-12-21 16:45:16,275 method:org.hibernate.mapping.RootClass.checkCompositeIdentifier(RootClass.java:258)
+composite-id class does not override hashCode(): com.jsdz.exchange.marker.MarkerId
+[INFO ] 2017-12-21 16:45:16,427 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-21 16:45:16,459 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9sxd4gti1jes4gn|792bbc74, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9sxd4gti1jes4gn|792bbc74, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.35)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.36)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjjzdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-21 16:45:16,955 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.Oracle10gDialect
+[INFO ] 2017-12-21 16:45:16,989 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-21 16:45:16,990 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-21 16:45:16,995 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-21 16:45:16,996 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-21 16:45:16,997 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-21 16:45:16,997 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-21 16:45:16,997 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-21 16:45:16,998 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-21 16:45:16,999 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-21 16:45:16,999 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): disabled
+[INFO ] 2017-12-21 16:45:16,999 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-21 16:45:16,999 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-21 16:45:17,000 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-21 16:45:17,001 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-21 16:45:17,001 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-21 16:45:17,001 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-21 16:45:17,002 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-21 16:45:17,004 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-21 16:45:17,005 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-21 16:45:17,005 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-21 16:45:17,005 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-21 16:45:17,005 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-21 16:45:17,006 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-21 16:45:17,007 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-21 16:45:17,008 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-21 16:45:17,013 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-21 16:45:17,014 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-21 16:45:17,015 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-21 16:45:17,015 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-21 16:45:17,015 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-21 16:45:17,015 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-21 16:45:17,059 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-21 16:45:17,065 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@5dda6f9
+[INFO ] 2017-12-21 16:45:17,065 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@5dda6f9
+[INFO ] 2017-12-21 16:45:17,066 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5a021cb9
+[INFO ] 2017-12-21 16:45:17,066 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4a9419d7
+[INFO ] 2017-12-21 16:45:17,066 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@411341bd
+[INFO ] 2017-12-21 16:45:17,067 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@fff25f1
+[INFO ] 2017-12-21 16:45:17,067 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@1b58ff9e
+[INFO ] 2017-12-21 16:45:17,067 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1b58ff9e
+[INFO ] 2017-12-21 16:45:17,068 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@2a492f2a
+[INFO ] 2017-12-21 16:45:17,555 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-21 16:45:17,643 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.initSchedulerFactory(SchedulerFactoryBean.java:551)
+Loading Quartz config from [class path resource [test-quartz.properties]]
+[INFO ] 2017-12-21 16:45:17,751 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1172)
+Using default implementation for ThreadExecutor
+[INFO ] 2017-12-21 16:45:17,755 method:org.quartz.simpl.SimpleThreadPool.initialize(SimpleThreadPool.java:268)
+Job execution threads will use class loader of thread: main
+[INFO ] 2017-12-21 16:45:17,776 method:org.quartz.core.SchedulerSignalerImpl.<init>(SchedulerSignalerImpl.java:61)
+Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] 2017-12-21 16:45:17,776 method:org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:240)
+Quartz Scheduler v.2.2.2 created.
+[INFO ] 2017-12-21 16:45:17,778 method:org.quartz.impl.jdbcjobstore.JobStoreSupport.initialize(JobStoreSupport.java:667)
+Using db table-based data access locking (synchronization).
+[INFO ] 2017-12-21 16:45:17,782 method:org.quartz.impl.jdbcjobstore.JobStoreTX.initialize(JobStoreTX.java:59)
+JobStoreTX initialized.
+[INFO ] 2017-12-21 16:45:17,783 method:org.quartz.core.QuartzScheduler.initialize(QuartzScheduler.java:305)
+Scheduler meta-data: Quartz Scheduler (v2.2.2) 'scheduler' with instanceId 'jz04-PC1513845917754'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+[INFO ] 2017-12-21 16:45:17,784 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1327)
+Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+[INFO ] 2017-12-21 16:45:17,784 method:org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1331)
+Quartz scheduler version: 2.2.2
+[INFO ] 2017-12-21 16:45:17,786 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@34aeacd1
+[INFO ] 2017-12-21 16:45:17,816 method:org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311)
+JobFactory set to: com.jsdz.scheduler.job.factory.JobFactoryJobSourceImpl@435cc7f9
+[INFO ] 2017-12-21 16:45:17,859 method:org.hibernate.cfg.Configuration.configure(Configuration.java:2192)
+configuring from url: file:/D:/work/%e5%b9%b3%e5%8f%b0/exchange/exchange-load/target/test-classes/test-hibernate_mid.cfg.xml
+[WARN ] 2017-12-21 16:45:17,873 method:org.hibernate.util.DTDEntityResolver.resolveEntity(DTDEntityResolver.java:73)
+recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[INFO ] 2017-12-21 16:45:17,875 method:org.hibernate.cfg.Configuration.addResource(Configuration.java:789)
+Reading mappings from resource : com/jsdz/exchange/entity/Exchange-Load.hbm.xml
+[INFO ] 2017-12-21 16:45:17,892 method:org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2297)
+Configured SessionFactory: null
+[INFO ] 2017-12-21 16:45:17,893 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.OrganizationX -> T_ORGANIZATION
+[INFO ] 2017-12-21 16:45:17,897 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.SiteX -> T_WORKSTATION
+[INFO ] 2017-12-21 16:45:17,907 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.PoliceX -> T_POLICE
+[INFO ] 2017-12-21 16:45:17,910 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.RecorderX -> T_RECORDER
+[INFO ] 2017-12-21 16:45:17,912 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.DocumentX -> T_DOC_INFO
+[INFO ] 2017-12-21 16:45:17,914 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.AlarmInfoX -> T_ALARM_INFO
+[INFO ] 2017-12-21 16:45:17,916 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.AlarmDocumentX -> T_CASE_DOC_LINK
+[INFO ] 2017-12-21 16:45:17,919 method:org.hibernate.cfg.HbmBinder.bindRootPersistentClassCommonValues(HbmBinder.java:353)
+Mapping class: com.jsdz.exchange.entity.CaseInfoX -> T_CASE_INFO
+[INFO ] 2017-12-21 16:45:17,923 method:org.hibernate.cfg.Configuration.applyHibernateValidatorLegacyConstraintsOnDDL(Configuration.java:1676)
+Hibernate Validator not found: ignoring
+[INFO ] 2017-12-21 16:45:17,924 method:org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:713)
+Building new Hibernate SessionFactory
+[INFO ] 2017-12-21 16:45:17,929 method:org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:75)
+Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+[INFO ] 2017-12-21 16:45:17,930 method:org.hibernate.connection.ConnectionProviderFactory.initializeConnectionProviderFromConfig(ConnectionProviderFactory.java:173)
+Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO ] 2017-12-21 16:45:17,968 method:com.mchange.v2.log.slf4j.Slf4jMLog$Slf4jMLogger$InfoLogger.log(Slf4jMLog.java:212)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 60, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2s798i9sxd4gti1jes4gn|59b65dce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 2s798i9sxd4gti1jes4gn|59b65dce, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=14.27.130.38)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST = 14.27.130.39)(PORT = 1521))(LOAD_BALANCE = yes)(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = bjdjdb))), maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 100, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ] 2017-12-21 16:45:18,024 method:org.hibernate.dialect.Dialect.<init>(Dialect.java:136)
+Using dialect: org.hibernate.dialect.Oracle10gDialect
+[INFO ] 2017-12-21 16:45:18,030 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:126)
+Database ->
+       name : Oracle
+    version : Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+      major : 11
+      minor : 2
+[INFO ] 2017-12-21 16:45:18,030 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:132)
+Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.1.0
+      major : 11
+      minor : 2
+[INFO ] 2017-12-21 16:45:18,030 method:org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:65)
+Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO ] 2017-12-21 16:45:18,031 method:org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:83)
+No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO ] 2017-12-21 16:45:18,031 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:179)
+Automatic flush during beforeCompletion(): disabled
+[INFO ] 2017-12-21 16:45:18,031 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:183)
+Automatic session close at end of transaction: disabled
+[INFO ] 2017-12-21 16:45:18,031 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:190)
+JDBC batch size: 30
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:193)
+JDBC batch updates for versioned data: disabled
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:198)
+Scrollable result sets: enabled
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:206)
+JDBC3 getGeneratedKeys(): disabled
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:210)
+JDBC result set fetch size: 50
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:214)
+Connection release mode: auto
+[INFO ] 2017-12-21 16:45:18,032 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:241)
+Default batch fetch size: 1
+[INFO ] 2017-12-21 16:45:18,033 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:245)
+Generate SQL with comments: enabled
+[INFO ] 2017-12-21 16:45:18,033 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:249)
+Order SQL updates by primary key: disabled
+[INFO ] 2017-12-21 16:45:18,034 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:253)
+Order SQL inserts for batching: disabled
+[INFO ] 2017-12-21 16:45:18,034 method:org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:431)
+Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO ] 2017-12-21 16:45:18,034 method:org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)
+Using ASTQueryTranslatorFactory
+[INFO ] 2017-12-21 16:45:18,034 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:261)
+Query language substitutions: {}
+[INFO ] 2017-12-21 16:45:18,034 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)
+JPA-QL strict compliance: disabled
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:271)
+Second-level cache: enabled
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:275)
+Query cache: disabled
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:406)
+Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)
+Optimize cache for minimal puts: disabled
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:294)
+Structured second-level cache entries: disabled
+[INFO ] 2017-12-21 16:45:18,035 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)
+Echoing all SQL to stdout
+[INFO ] 2017-12-21 16:45:18,038 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:323)
+Statistics: disabled
+[INFO ] 2017-12-21 16:45:18,038 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:327)
+Deleted entity synthetic identifier rollback: disabled
+[INFO ] 2017-12-21 16:45:18,039 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:343)
+Default entity-mode: pojo
+[INFO ] 2017-12-21 16:45:18,039 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:347)
+Named query checking : enabled
+[INFO ] 2017-12-21 16:45:18,039 method:org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:351)
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[INFO ] 2017-12-21 16:45:18,045 method:org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:202)
+building session factory
+[INFO ] 2017-12-21 16:45:18,046 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [clob] overrides previous : org.hibernate.type.ClobType@5dda6f9
+[INFO ] 2017-12-21 16:45:18,046 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@5dda6f9
+[INFO ] 2017-12-21 16:45:18,046 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5a021cb9
+[INFO ] 2017-12-21 16:45:18,046 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@4a9419d7
+[INFO ] 2017-12-21 16:45:18,047 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@411341bd
+[INFO ] 2017-12-21 16:45:18,047 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@fff25f1
+[INFO ] 2017-12-21 16:45:18,047 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [blob] overrides previous : org.hibernate.type.BlobType@1b58ff9e
+[INFO ] 2017-12-21 16:45:18,047 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1b58ff9e
+[INFO ] 2017-12-21 16:45:18,047 method:org.hibernate.type.BasicTypeRegistry.register(BasicTypeRegistry.java:150)
+Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@2a492f2a
+[INFO ] 2017-12-21 16:45:18,078 method:org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)
+Not binding factory to JNDI, no JNDI name configured
+[INFO ] 2017-12-21 16:45:18,381 method:org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:101)
+Began transaction (1) for test context [DefaultTestContext@2ea227af testClass = ExLoadDaoTest, testInstance = com.jsdz.test.exchange.load.ExLoadDaoTest@78e117e3, testMethod = testLoadInData_Police@ExLoadDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4386f16 testClass = ExLoadDaoTest, locations = '{classpath:/testApplicationContext-common.xml, classpath:/testApplicationContext-dynsql.xml, classpath:/testApplicationContext-documenttype.xml, classpath:/testApplicationContext-scheduler.xml, classpath:/testApplicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@76fe6cdc]; rollback [false]
+[INFO ] 2017-12-21 16:45:18,818 method:org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:136)
+Committed transaction for test context [DefaultTestContext@2ea227af testClass = ExLoadDaoTest, testInstance = com.jsdz.test.exchange.load.ExLoadDaoTest@78e117e3, testMethod = testLoadInData_Police@ExLoadDaoTest, testException = org.springframework.orm.hibernate3.HibernateQueryException: com.jsdz.exchange.load.entity.PoliceX is not mapped [from com.jsdz.exchange.load.entity.PoliceX o where o.createTime >= :curValue order by o.createTime ]; nested exception is org.hibernate.hql.ast.QuerySyntaxException: com.jsdz.exchange.load.entity.PoliceX is not mapped [from com.jsdz.exchange.load.entity.PoliceX o where o.createTime >= :curValue order by o.createTime ], mergedContextConfiguration = [MergedContextConfiguration@4386f16 testClass = ExLoadDaoTest, locations = '{classpath:/testApplicationContext-common.xml, classpath:/testApplicationContext-dynsql.xml, classpath:/testApplicationContext-documenttype.xml, classpath:/testApplicationContext-scheduler.xml, classpath:/testApplicationContext-dao.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[INFO ] 2017-12-21 16:45:18,827 method:org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:862)
+Closing org.springframework.context.support.GenericApplicationContext@67a20f67: startup date [Thu Dec 21 16:45:15 CST 2017]; root of context hierarchy
+[INFO ] 2017-12-21 16:45:18,830 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:356)
+Stopping beans in phase 2147483647
+[INFO ] 2017-12-21 16:45:18,837 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-21 16:45:18,838 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing
+[INFO ] 2017-12-21 16:45:18,840 method:org.springframework.scheduling.quartz.SchedulerFactoryBean.destroy(SchedulerFactoryBean.java:765)
+Shutting down Quartz Scheduler
+[INFO ] 2017-12-21 16:45:18,840 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:694)
+Scheduler scheduler_$_jz04-PC1513845917754 shutting down.
+[INFO ] 2017-12-21 16:45:18,840 method:org.quartz.core.QuartzScheduler.standby(QuartzScheduler.java:613)
+Scheduler scheduler_$_jz04-PC1513845917754 paused.
+[INFO ] 2017-12-21 16:45:18,841 method:org.quartz.core.QuartzScheduler.shutdown(QuartzScheduler.java:771)
+Scheduler scheduler_$_jz04-PC1513845917754 shutdown complete.
+[INFO ] 2017-12-21 16:45:18,842 method:org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:225)
+Closing Hibernate SessionFactory
+[INFO ] 2017-12-21 16:45:18,842 method:org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:927)
+closing

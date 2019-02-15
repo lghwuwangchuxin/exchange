@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- document检索 -->
+<sqlTemplates>
+  <entry>
+  	<!-- sql名称 -->
+    <string>docReportQuery</string>
+    <sqlTemplate>
+      <!-- sql模式 -->
+      <sqlPattern>
+      select d.doc_id id, 
+            p._workNumber policeCode, 
+            p._name policeName, 
+            o._orgName orgName,
+            o._path orgPath,
+            s.site_no siteCode, 
+      		d.content_type type,
+      		d.cate cate, 
+      		d.doc_name docName, 
+      		d.upload_time uploadTime, 
+      		d.create_time createTime, 
+      		d.duration, 
+      		d.video_clarity clarity, 
+      		d.imp_level_rec impLevelRec,
+      		d.imp_level impLevel, 
+      		d.doc_size fileM, 
+      		s.address siteAddr, 
+      		r.code equimentCode,
+      		d.comment comments,
+      		e.ID enforceTypeId,
+      		e.NAME enforceTypeName
+            from t_doc d 
+                left join admin_employees p on d.police_id = p._id
+                left join admin_organization o on o._id = p._organizationId
+				left join t_site s on d.site_id = s.id 
+                left join t_recorder r on d.recorder_id = r.id
+                left join t_enforce_type e on d.enforce_id = e.ID
+		where 1=1 {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15}
+		          
+      </sqlPattern>
+      <!-- 返回Bean -->
+      <itemClass>com.jsdz.test.reportquery.TestBean</itemClass>
+      <!-- sql可变块 -->
+      <pieces>
+      	<!-- 0, code -->
+        <sqlPiece>
+          <!--  -->
+          <fork>
+            <paths>
+              <path>
+                <paramName>policeCode</paramName>
+                <t>and p._workNumber = :policeCode</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 1, policeName -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>policeName</paramName>
+                <t>and p._name like :policeName</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- org, 树形查询  -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>orgId</paramName>
+                <t>and o._path like :orgId</t>
+                <a class="IsTree"/>
+              </path>
+              <path>
+                <paramName>orgId</paramName>
+                <t>and o._path = :orgId</t>
+                <a class="IsNotTree"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        
+      <!-- 2, site_no -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>siteCode</paramName>
+                <t>and s.site_no = :siteCode</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 3, doc_name -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>docName</paramName>
+                <t>and d.doc_name like :docName</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 4, videoClarity -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>clarity</paramName>
+                <t>and d.video_clarity = :clarity</t>
+                <a class="IsNotNull"/>
+              </path>          
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 5, startUT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>startUT</paramName>
+                <t >and d.upload_time &gt;= :startUT</t>
+                <a class="IsNotNull"/>
+              </path>         
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 6, endUT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>endUT</paramName>
+                <t >and d.upload_time &lt; :endUT</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 7, startCT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>startCT</paramName>
+                <t >and d.create_time &gt;= :startCT</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 8, endCT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>endCT</paramName>
+                <t >and d.create_time &lt; :endCT</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 9, imp level -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>impLevel</paramName>
+                <t >and d.imp_level = :impLevel</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 10, type -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>cate</paramName>
+                <t >and d.cate = :cate</t>
+                <a class="IsNotNull"/>
+              </path>           
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 11, recCode -->
+      	<sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>equimentCode</paramName>
+                <t >and r.code = :equimentCode</t>
+                <a class="IsNotNull"/>
+              </path>             
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 12, siteAddr -->
+      	<sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>siteAddr</paramName>
+                <t >and s.address like :siteAddr</t>
+                <a class="IsNotNull"/>
+              </path>              
+            </paths>
+          </fork>
+        </sqlPiece>
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>comments</paramName>
+                <t >and d.comment like :comments</t>
+                <a class="IsNotNull"/>
+              </path>              
+            </paths>
+          </fork>
+        </sqlPiece>
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>enforceTypeName</paramName>
+                <t >and e.NAME like :enforceTypeName</t>
+                <a class="IsNotNull"/>
+              </path>              
+            </paths>
+          </fork>
+        </sqlPiece>
+      </pieces>
+    </sqlTemplate>
+  </entry>
+  <!-- 总页数 -->
+  <entry>
+  	<!-- sql名称 -->
+    <string>docReportQueryTotalPage</string>
+    <sqlTemplate>
+      <!-- sql模式 -->
+      <sqlPattern>
+      select count(*) total
+            from t_doc d 
+                left join admin_employees p on d.police_id = p._id
+                left join admin_organization o on o._id = p._organizationId
+				left join t_site s on d.site_id = s.id 
+                left join t_recorder r on d.recorder_id = r.id
+                left join t_enforce_type e on d.enforce_id = e.ID
+		where 1=1 {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} 
+		          
+      </sqlPattern>
+      <!-- 返回实体Bean -->
+      <itemClass>com.jsdz.test.reportquery.TestBean</itemClass>
+      <!-- sql可变块 -->
+      <pieces>
+      	<!-- 0, code -->
+        <sqlPiece>
+          <!--  -->
+          <fork>
+            <paths>
+              <path>
+                <paramName>policeCode</paramName>
+                <t >and p._workNumber = :policeCode</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 1, policeName -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>policeName</paramName>
+                <t >and p._name like :policeName</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 2, site_no -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>siteCode</paramName>
+                <t >and s.site_no = :siteCode</t>
+                <a class="IsNotNull"/>
+              </path>             
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- org, 树形查询  -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>orgId</paramName>
+                <t>and o._path like :orgId</t>
+                <a class="IsTree"/>
+              </path>
+              <path>
+                <paramName>orgId</paramName>
+                <t>and o._path = :orgId</t>
+                <a class="IsNotTree"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        
+      <!-- 3, doc_name -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>docName</paramName>
+                <t >and d.doc_name like :docName</t>
+                <a class="IsNotNull"/>
+              </path>           
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 4, videoClarity -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>clarity</paramName>
+                <t >and d.video_clarity = :clarity</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 5, startUT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>startUT</paramName>
+                <t >and d.upload_time &gt;= :startUT</t>
+                <a class="IsNotNull"/>
+              </path>           
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 6, endUT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>endUT</paramName>
+                <t >and d.upload_time &lt; :endUT</t>
+                <a class="IsNotNull"/>
+              </path>            
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 7, startCT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>startCT</paramName>
+                <t >and d.create_time &gt;= :startCT</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      <!-- 8, endCT -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>endCT</paramName>
+                <t >and d.create_time &lt; :endCT</t>
+                <a class="IsNotNull"/>
+              </path>            
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 9, imp level -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>impLevel</paramName>
+                <t >and d.imp_level = :impLevel</t>
+                <a class="IsNotNull"/>
+              </path>             
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 10, type -->
+      <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>cate</paramName>
+                <t >and d.cate = :cate</t>
+                <a class="IsNotNull"/>
+              </path>             
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 11, recCode -->
+      	<sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>equimentCode</paramName>
+                <t >and r.code = :equimentCode</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 12, siteAddr -->
+      	<sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>siteAddr</paramName>
+                <t >and s.address like :siteAddr</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>comments</paramName>
+                <t >and d.comment like :comments</t>
+                <a class="IsNotNull"/>
+              </path>              
+            </paths>
+          </fork>
+        </sqlPiece>
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>enforceTypeName</paramName>
+                <t >and e.NAME like :enforceTypeName</t>
+                <a class="IsNotNull"/>
+              </path>              
+            </paths>
+          </fork>
+        </sqlPiece>
+      </pieces>
+    </sqlTemplate>
+  </entry>
+</sqlTemplates>

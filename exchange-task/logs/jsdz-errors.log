@@ -1,0 +1,18 @@
+[ERROR] 2017-12-26 19:40:59,581 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:108)
+实体找不到必需的关联：com.jsdz.exchange.entity.PoliceX@6b649efa
+[ERROR] 2017-12-26 19:44:42,711 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:108)
+实体找不到必需的关联：com.jsdz.exchange.entity.PoliceX@50f40653
+[ERROR] 2017-12-26 19:44:42,711 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:118)
+实体更新错误：{0}
+[ERROR] 2017-12-26 19:44:44,065 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:108)
+实体找不到必需的关联：com.jsdz.exchange.entity.RecorderX@3f1a4795
+[ERROR] 2017-12-26 19:44:44,067 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:126)
+实体入库错误：{0}
+[ERROR] 2017-12-26 19:44:44,180 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:108)
+实体找不到必需的关联：com.jsdz.exchange.entity.RecorderX@201c3cda
+[ERROR] 2017-12-26 19:44:44,182 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:126)
+实体入库错误：{0}
+[ERROR] 2017-12-26 19:44:44,484 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:108)
+实体找不到必需的关联：com.jsdz.exchange.entity.RecorderX@2cde651b
+[ERROR] 2017-12-26 19:44:44,485 method:com.jsdz.exchange.task.ExchangeJob.execute(ExchangeJob.java:126)
+实体入库错误：{0}

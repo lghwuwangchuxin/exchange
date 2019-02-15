@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topo>
+  <key>PIS-CCTC</key>
+  <nodes>
+    <node>
+      <name>org</name>
+      <clazz>com.jsdz.exchange.load.entity.OrganizationX</clazz>
+    </node>
+    <node>
+      <name>work station</name>
+      <clazz>com.jsdz.exchange.load.entity.SiteX</clazz>
+    </node>
+  </nodes>
+</topo>

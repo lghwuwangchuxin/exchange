@@ -1,0 +1,4 @@
+[ERROR] 2017-09-05 15:45:37,799 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:212)
+Unsuccessful: alter table T_SiteActivite add column INTERVAL integer
+[ERROR] 2017-09-05 15:45:37,805 method:org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:213)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTERVAL integer' at line 1

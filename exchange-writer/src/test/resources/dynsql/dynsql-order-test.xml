@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 考核监督动态sql -->
+<sqlTemplates>
+  <entry>
+  	<!-- 拍摄考核概况 -->
+    <string>profileOfShootingAssessment</string>
+    <sqlTemplate>
+      <!-- sql模式 -->
+      <sqlPattern>
+		 select 
+		   b._workNumber, 
+		   b._name,
+		   c._position,
+		   b._male,
+		   b._age,
+		   a.totalDocs,
+		   a.assessDocs,
+		   assessDocs/totalDocs assessRate from (
+		 select
+		 e._id, 
+		 count(*) totalDocs, 
+		 sum(case when s.ID is not null then 1 else 0 end) assessDocs
+		 
+		 FROM t_doc d 
+			left join t_assessment_shooting s on s.DOC_ID = d.DOC_ID 
+		    left join admin_employees e on e._id = d.POLICE_ID
+		    where 1=1 {0} 
+		    group by e._id ) a 
+		    left join admin_employees b on a._id = b._id
+		    left join admin_position c on b._positionId = c._id
+		    left join admin_organization o on o._id = b._organizationId
+		    left join admin_region r on o._regionId = r._id
+		    left join admin_department d1 on d1._id = b._departmentId
+		    {1} <!-- 考核率排序 -->
+  
+      </sqlPattern>
+      <!-- 返回Bean -->
+      <itemClass>com.jsdz.test.reportquery.TestBean</itemClass>
+      <!-- sql可变块 -->
+      <pieces>
+        <!-- 警员姓名 -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>policeName</paramName>
+                <t>and d1._workNumber like :policeCode</t>
+                <a class="IsNotNull"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+        <!-- 考核率排序 -->
+        <sqlPiece>
+          <fork>
+            <paths>
+              <path>
+                <paramName>assessRateOrder</paramName>
+                <t></t>
+                <a class="IsNull"/>
+              </path>
+              <path>
+                <paramName>assessRateOrder</paramName>
+                <t>order by assessRate ASC</t>
+                <a class="OrderByASC"/>
+              </path>
+              <path>
+                <paramName>assessRateOrder</paramName>
+                <t>order by assessRate DESC</t>
+                <a class="OrderByDESC"/>
+              </path>
+            </paths>
+          </fork>
+        </sqlPiece>
+      </pieces>
+    </sqlTemplate>
+  </entry>
+</sqlTemplates>

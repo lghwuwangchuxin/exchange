@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+		
+	<!-- 入库处理器 -->
+	<bean id="handlerRegister" 
+			class="com.jsdz.exchange.writer.ExWriterHandlerRegister">  
+		<property name="handlers">
+        	<map>  
+            	<entry key ="com.jsdz.exchange.entity.OrganizationX">
+                	<ref bean="orgExWriterHandler" />
+                </entry>     
+                <entry key ="com.jsdz.exchange.entity.SiteX">
+                	<ref bean="siteExWriterHandler" />
+                </entry>    
+                <entry key ="com.jsdz.exchange.entity.PoliceX">
+                	<ref bean="policeExWriterHandler" />
+                </entry>
+                <entry key ="com.jsdz.exchange.entity.RecorderX">
+                	<ref bean="recorderExWriterHandler" />
+                </entry>
+                <entry key ="com.jsdz.exchange.entity.DocumentX">
+                	<ref bean="documentExWriterHandler" />
+                </entry>
+            </map>            
+   		</property>   		
+	</bean>	
+		
+</beans>
